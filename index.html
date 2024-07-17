@@ -4,8 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(226, 248, 246);
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-heading {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .main-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: popUp 0.6s ease-in-out;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .read-more {
+            color: rgb(43, 120, 192);
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes popUp {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .main-heading {
+                font-size: 2em;
+            }
+            .main-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgb(8, 1, 2);
+            color: rgb(98, 132, 224);
+            padding: 50px 0 30px;
+            border-top-left-radius: 125px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .row {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 25%;
+            padding: 10px;
+        }
+
+        .img {
+            width: 80px;
+            margin-bottom: 30px;
+        }
+
+        .col h3 {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .col h4 {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 30px 0;
+            }
+
+            .row {
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .col {
+                flex-basis: 100%;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="main-heading">The Operations Playbook</h1>
+        <div class="main-cards">
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/65202acc10e3df1dd59a7c4a_Your%20Capital-p-500.jpg" alt="Image 1">
+                <h3>How to Efficiently Plan a Capital Project?</h3>
+                <h5 class="read-more">Read More</h5>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/64f1aabd9b7c2cd947570d00_advanced-metering-interface-p-500.jpg" alt="Image 2">
+                <h3>Unveiling the Holy Grail of Advanced Metering Interface <br>
+                The next Revolution in smart Metering Management</h3>
+                <h5 class="read-more">Read More</h5>
+            </div>
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/6548a73c2e324d51c9c4b86e_LAL-p-500.jpg" alt="Image 3">
+                <h3>Operations Mangers as Citizen Developers: <br>Manufacturing</h3>
+                <h5 class="read-more">Read More</h5>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64992e0e130d679113b69495_Group%2048096700.svg" alt="">
+                <h4>Changing how businesses build and use applications</h4>
+                <h4>Get a free trial for your company -></h4>
+                <p>Shree Gopal Complex, <br>
+                Workongrid,3P,CourtRd, <br>
+                Ranchi, Jharkhand 834001, <br>
+                India</p>
+                <h4>+91-62032 49377</h4>
+                <h4>hello@workongrid.com</h4>
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89fff66b3e5cf7bc4d3_AWS%20Partner.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89eca71bb3a5478daba_AWS%20QS.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a022f62f5631836e50_GDPR.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89f5d824989670c4495_SOC-2.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a0b587a200a933e1bb_ISO-27001.png" alt="">
+            </div>
+            <div class="col">
+                <h3>Platform</h3>
+                <h4>Overview</h4>
+                <h4>Security</h4>
+                <h4>Deployment Models</h4>
+                <h4>Workflow Builder</h4>
+                <h4>Business Intelligence</h4>
+                <h4>IoT Data</h4>
+                <h4>Integration</h4>
+                <h4>GIS Data</h4>
+            </div>
+            <div class="col">
+                <h3>Industry</h3>
+                <h4>Mining</h4>
+                <h4>Utilities</h4>
+                <h4>Infrastructure</h4>
+                <h4>Manufacturing</h4>
+                <h4>Food and Beverages</h4>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
