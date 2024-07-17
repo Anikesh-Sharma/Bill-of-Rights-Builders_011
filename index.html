@@ -4,8 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    *{
+      font-family: "Inter", sans-serif;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    .Aniket_nav{
+        padding: 0px 10px;
+    }
+    .aniket_nav_button{
+        padding: 7px 15px;
+        border: 1.5px solid rgb(0, 102, 255);
+        border-radius:8px ;
+        background-color: rgb(237, 244, 254);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .aniket_nav_button:hover{
+        background-color: rgb(0, 102, 255);
+        color: white;
+    }
+    .aniket_nav_fonts{
+        margin-left: 30px;
+    }
+    .aniket_nav_fonts{
+
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(76, 75, 75);
+        
+    }
+    .aniket_nav_fonts:hover{
+        color: rgb(0, 102, 255);;
+    }
+    .Aniket_nav_ele>span{
+        font-size: 19px;
+        font-weight: 600;
+        margin-right: 30px;
+        color: rgb(75, 74, 74);
+        padding: 10px;
+    }
+    .Aniket_nav_ele>span:hover{
+        background-color: #e7eaf1;
+        border-radius: 5px;
+        padding: 10px;
+
+    }
+    .aniket_logo{
+        font-size: 40px;
+        font-weight: 900;
+        color: rgb(29, 135, 244);
+    }
+</style>
 </head>
 <body>
+    <div class="container-xxl">
+        <nav class="navbar navbar-expand-lg bg-white Aniket_nav">
+            <div class="container-fluid">
+              <a class="navbar-brand aniket_logo" href="#">Flex.</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent d-flex align-items-end">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Platform
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Platform</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown  aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Resources
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="#" class="nav-link  aniket_nav_fonts" aria-disabled="true">Partners</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown  aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About Us
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="Aniket_nav_ele">
+                    <span>Log In </span>
+                    <button class="aniket_nav_button">Talk To Us</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
     
 </body>
 </html>
