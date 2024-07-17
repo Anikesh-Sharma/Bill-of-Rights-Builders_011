@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -130,5 +130,82 @@
           </nav>
     </div>
     
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+      body {
+          background-color: #f7f8fc;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+      }
+      .container {
+          text-align: center;
+      }
+      h1 {
+          color: #007bff;
+          margin-bottom: 10px;
+      }
+      p {
+          color: #666;
+          margin-bottom: 30px;
+      }
+      .nav-tabs {
+          border-bottom: 2px solid #dfe1e5;
+      }
+      .nav-link {
+          color: #666;
+          margin: 0 10px;
+      }
+      .nav-link.active {
+          color: #007bff;
+          border-color: #007bff;
+          border-bottom: 2px solid #007bff;
+      }
+      .tab-content img {
+          width: 100%;
+          max-width: 800px;
+          margin-top: 30px;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <h1>Reduce Setup Time With Templates</h1>
+      <p>Get started on Grid in minutes, with world-class templates for a host of industries and processes, created by leading operations experts.</p>
+      <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="surveying-tab" data-bs-toggle="tab" data-bs-target="#surveying" type="button" role="tab" aria-controls="surveying" aria-selected="true">Surveying</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="production-tab" data-bs-toggle="tab" data-bs-target="#production" type="button" role="tab" aria-controls="production" aria-selected="false">Production Tracking</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="expense-tab" data-bs-toggle="tab" data-bs-target="#expense" type="button" role="tab" aria-controls="expense" aria-selected="false">Expense Management</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="asset-tab" data-bs-toggle="tab" data-bs-target="#asset" type="button" role="tab" aria-controls="asset" aria-selected="false">Asset Tracking</button>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="surveying" role="tabpanel" aria-labelledby="surveying-tab">
+              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816ffd7a88ab7184a92_product%20screens-74.svg" alt="Surveying">
+          </div>
+          <div class="tab-pane fade" id="production" role="tabpanel" aria-labelledby="production-tab">
+              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816b38c92a6814e4173_product%20screens-76.svg" alt="Production Tracking">
+          </div>
+          <div class="tab-pane fade" id="expense" role="tabpanel" aria-labelledby="expense-tab">
+              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816fb04147ed01c3962_product%20screens-73.svg" alt="Expense Management">
+          </div>
+          <div class="tab-pane fade" id="asset" role="tabpanel" aria-labelledby="asset-tab">
+              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816a8ac4682791b0526_product%20screens-75.svg" alt="Asset Tracking">
+          </div>
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
