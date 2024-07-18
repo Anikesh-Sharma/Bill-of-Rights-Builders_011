@@ -10,44 +10,147 @@
           background-color: #f7f8fc;
           display: flex;
           justify-content: center;
-          align-items: center;
+          align-items: flex-start;
           height: 100vh;
           margin: 0;
-      }
-      .container {
           text-align: center;
+          padding: 20px 10px;
       }
-      h1 {
+
+      .container #anikesh {
+          margin-top: 20px;
+      }
+
+      .anikesh-h1 {
           color: #007bff;
           margin-bottom: 10px;
       }
-      p {
+
+      .anikesh-p {
           color: #666;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
       }
+
       .nav-tabs {
           border-bottom: 2px solid #dfe1e5;
       }
+
       .nav-link {
           color: #666;
-          margin: 0 10px;
+          margin: 5px 10px;
       }
+
       .nav-link.active {
           color: #007bff;
           border-color: #007bff;
           border-bottom: 2px solid #007bff;
       }
+
       .tab-content img {
           width: 100%;
           max-width: 800px;
-          margin-top: 30px;
+          margin-top: 20px;
+      }
+
+      .get-started-btn {
+          background-color: #007bff;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          margin-top: 20px;
+      }
+
+      /* Media query for devices with max width 768px */
+      @media (max-width: 768px) {
+        .container #anikesh {
+              width: 100%;
+              padding: 10px;
+          }
+
+          .anikesh-h1 {
+              font-size: 24px;
+          }
+
+          .anikesh-p {
+              font-size: 16px;
+          }
+
+          .nav-tabs {
+              flex-direction: column;
+              align-items: center;
+          }
+
+          .nav-link {
+              margin: 5px 0;
+              width: 100%;
+              font-size: 16px;
+          }
+
+          .get-started-btn {
+              font-size: 16px;
+          }
+      }
+
+      /* Media query for devices with min width 769px and max width 992px (tablets) */
+      @media (min-width: 769px) and (max-width: 992px) {
+          body {
+              align-items: flex-start;
+          }
+
+          .container #anikesh {
+              margin-top: 40px;
+              width: 80%;
+          }
+
+          .anikesh-h1 {
+              font-size: 28px;
+          }
+
+          .anikesh-p {
+              font-size: 17px;
+          }
+
+          .get-started-btn {
+              font-size: 17px;
+          }
+      }
+
+      /* Media query for devices with min width 993px */
+      @media (min-width: 993px) {
+        .container #anikesh {
+              width: auto;
+              padding: 0;
+          }
+
+          .nav-tabs {
+              flex-direction: row;
+              justify-content: center;
+          }
+
+          .nav-link {
+              margin: 0 10px;
+              width: auto;
+          }
+
+          .anikesh-h1 {
+              font-size: 32px;
+          }
+
+          .anikesh-p {
+              font-size: 18px;
+          }
+
+          .get-started-btn {
+              font-size: 18px;
+          }
       }
   </style>
 </head>
 <body>
-  <div class="container">
-      <h1>Reduce Setup Time With Templates</h1>
-      <p>Get started on Grid in minutes, with world-class templates for a host of industries and processes, created by leading operations experts.</p>
+  <div class="container" id="anikesh">
+      <h1 class="anikesh-h1">Reduce Setup Time With Templates</h1>
+      <p class="anikesh-p">Get started on Grid in minutes, with world-class templates for a host of industries and processes, created by leading operations experts.</p>
       <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
               <button class="nav-link active" id="surveying-tab" data-bs-toggle="tab" data-bs-target="#surveying" type="button" role="tab" aria-controls="surveying" aria-selected="true">Surveying</button>
@@ -67,7 +170,7 @@
               <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816ffd7a88ab7184a92_product%20screens-74.svg" alt="Surveying">
           </div>
           <div class="tab-pane fade" id="production" role="tabpanel" aria-labelledby="production-tab">
-              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816b38c92a6814e4173_product%20screens-76.svg" alt="Production Tracking">
+              <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816b38c92a6814e4173_product%20screens-76.svg" class="anikesh-img" alt="Production Tracking">
           </div>
           <div class="tab-pane fade" id="expense" role="tabpanel" aria-labelledby="expense-tab">
               <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816fb04147ed01c3962_product%20screens-73.svg" alt="Expense Management">
@@ -76,6 +179,7 @@
               <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816a8ac4682791b0526_product%20screens-75.svg" alt="Asset Tracking">
           </div>
       </div>
+      <button class="get-started-btn">Get Started</button>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
