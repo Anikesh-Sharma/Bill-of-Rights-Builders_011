@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    *{
+      font-family: "Inter", sans-serif;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    .Aniket_section{
+        width: 100vw;
+        height: auto;
+        background: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
+    }
+     .Aniket_section_cont{
+        max-width: 800px;
+        background-color: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
+        height: auto;
+        margin: auto;
+        padding: 30px 0px;
+     }
+     .Aniket_section_cont>p:nth-child(1){
+        color: white;
+        max-width: 550px;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        margin: auto;
+        animation: Aniket_section_cont2 2s;
+        overflow: hidden;
+     }
+     .Aniket_section_cont>p:nth-child(2){
+        color: white;
+        max-width: 600px;
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        animation: Aniket_section_cont1 2s  forwards;
+        overflow: hidden;
+     }
+
+.Aniket_main_cont1{
+    max-width: 1100px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: " Q1 Q2"
+                            "Q3 Q4"
+                            "Q5 Q6"
+                            "Q7 Q8";
+    margin-top: 40px;
+    gap: 40PX;
+
+
+}
+.Aniket_main_cont1>div:nth-child(1){
+    
+    grid-area: Q1;
+    
+}
+.Aniket_main_cont1>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: Aniket_section_cont1 2s  forwards;
+    animation-timeline:view() ;
+    grid-area: Q2;
+    overflow: hidden;
+    
+}
+.Aniket_main_cont1>div:nth-child(2)>h2{
+    color: rgb(49, 49, 49);
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(2)>p{
+    width: 400px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(2)>h5{
+    color: rgb(41, 146, 251);
+}
+
+
+.Aniket_main_cont1>div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: Aniket_section_cont2 2s  forwards;
+    animation-timeline:view() ;
+    grid-area: Q3;
+    overflow: hidden;
+    
+    
+}
+.Aniket_main_cont1>div:nth-child(3)>h2{
+    color: rgb(49, 49, 49);
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(3)>p{
+    width: 400px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(3)>h5{
+    color: rgb(41, 146, 251);
+}
+.Aniket_main_cont1>div:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: Aniket_section_cont1 2s  forwards;
+    animation-timeline:view() ;
+    grid-area: Q6;
+    overflow: hidden;
+    
+    
+}
+.Aniket_main_cont1>div:nth-child(6)>h2{
+    color: rgb(49, 49, 49);
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(6)>p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(6)>h5{
+    color: rgb(41, 146, 251);
+    width: 420px;
+}
+.Aniket_main_cont1>div:nth-child(4){
+    grid-area: Q4;
+}
+.Aniket_main_cont1>div:nth-child(5){
+    grid-area: Q5;
+}
+
+.Aniket_main_cont1>div:nth-child(7){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: Aniket_section_cont2 2s  forwards;
+    animation-timeline:view() ;
+    grid-area: Q7;
+    overflow: hidden;
+    
+    
+}
+.Aniket_main_cont1>div:nth-child(7)>h2{
+    
+    width: 300px;
+    color: rgb(49, 49, 49);
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(7)>p{
+    width: 350px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.Aniket_main_cont1>div:nth-child(7)>h5{
+    color: rgb(41, 146, 251);
+    width: 420px;
+}
+.Aniket_main_cont1>div:nth-child(8){
+    grid-area: Q8;
+}
+
+.Aniket_lower_cont{
+    max-width: 900px;
+        background-color: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
+        height: auto;
+        margin: auto;
+        padding: 30px 0px;
+        
+}
+.Aniket_lower_cont>p:nth-child(1){
+    color: white;
+        max-width: 600px;
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin: auto;
+        
+
+}
+.Aniket_lower_cont>p:nth-child(2){
+        color: white;
+        max-width: 450px;
+        font-size: 14px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+
+}
+
+.Aniket_lower_cont>div{
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+.Aniket_input{
+    width: 180px;
+    height: 26px;
+    padding: 3.5px;
+    padding-left: 9px;
+    border: none;
+    border-radius: 4px;
+}
+.Aniket_select{
+    width: 180px;
+    height: 26px;
+    padding: 3.5px;
+    padding-left: 9px;
+    border: none;
+    border-radius: 4px;
+    color: gray;
+
+}
+.Aniket_button{
+    padding: 3px 29px;
+}
+.Aniket_lower_cont>div>form>span{
+    font-size: 7px;
+}
+@keyframes Aniket_section_cont1 {
+    0%{
+        transform: translate(500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translate(0px);
+        opacity: 2;
+    }
+}
+@keyframes Aniket_section_cont2 {
+    0%{
+        transform: translate(-500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translate(0px);
+        opacity: 2;
+    }
+} 
+@media (width <= 900px) {
+    .Aniket_section_cont>p:nth-child(1){
+        max-width: 350px ;
+        font-size: 25PX;
+        text-align: center          ;
+     }
+     .Aniket_section_cont>p:nth-child(2){
+        max-width: 350px ;
+        font-size: auto;
+     }
+
+}
+@media (width <= 750px) {
+    .Aniket_section_cont>p:nth-child(1){
+        max-width: 300px ;
+        font-size: 20PX;
+        text-align: center          ;
+     }
+     .Aniket_section_cont>p:nth-child(2){
+        max-width: 300px ;
+        font-size: auto;
+     }
+
+}
+@media (width <= 450px) {
+    .Aniket_section_cont>p:nth-child(1){
+        max-width: 200px ;
+        font-size: 18PX;
+        text-align: center   
+    
+               ;
+     }
+     .Aniket_section_cont>p:nth-child(2){
+        max-width: 250px ;
+        font-size: auto;
+     }
+
+}
+@media (width <= 750px) {
+    .Aniket_main_cont1{
+ 
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: " Q1"
+                            " Q2"
+                            "Q4" 
+                            "Q3"
+                            "Q5"
+                             "Q6"
+                            "Q8"
+                            " Q7";
+   margin-left:20px ;
+
+}
+
+}
+
+@media (width <= 450px) {
+    .Aniket_lower_cont>div{
+    width: 70vw;
+    flex-wrap: wrap;
+
+}
+.Aniket_checkbox{
+    display: block;
+}
+
+}
+@media (width <= 750px) {
+    .Aniket_lower_cont>div{
+    width: 70vw;
+    flex-wrap: wrap;
+
+}
+.Aniket_checkbox{
+    display: block;
+}
+
+
+
+}
+
+
+   </style>
+
+</head>
+<body>
+    <section  class="Aniket_section">
+        <div class="Aniket_section_cont">
+            <p>A revolution for frontline
+                operations teams.
+            </p>
+            <p>Grid is built upon the combined experience of over 100 operations & project delivery teams and the challenges they faced.</p>
+        </div>
+    </section>
+    <main>
+        <div class="Aniket_main_cont1">
+            <div>
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64c0cb51bf2b6e0702bfb637_product%20screens-71.svg" alt="">
+            </div>
+            <div>
+                <h2>No-Code Worksheets</h2>
+                <p>Enable seamless data gathering from mobile or web applications or bring data from other software or even devices using integrations.</p>
+                <h5>Build your own mobile apps in minutes not months.</h5>
+            </div>
+            <div>
+            <h2>Workflow Automation</h2>
+            <p>Automate anything using data links, approval flows, notifications, and reminders.</p>  
+            <h5>Create personalized alerts & reminders for your entire team.</h5>  
+            </div>
+            <div>
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816c9f71e0de058b8b4_product%20screens-72.svg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/6499434b9ebdd8aa6313f94b_product%20screens-49.svg" alt="">
+            </div>
+            <div>
+                <h2>
+                    Dashboard Builders</h2>
+                    <p>Track and visualize all your data with dashboards.</p>
+                    <h5>Get a real-time view into the health of your business and easily track KPIs.</h5>
+            </div>
+            <div><h2>Team & Access
+                Management</h2>
+                <p>Ensure personalized app experiences and data compliance with teams and granular access management.</p>
+                <h5>Each application is personalized for the end-user.</h5>
+            </div>
+            <div><img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64c0cb514f9a861231d0e5c3_product%20screens-79.svg" alt=""></div>
+        </div>
+    </main>
+    <section class="Aniket_section">
+        <div class="Aniket_lower_cont">
+            <p>Access The Operations Playbook</p>
+            <p>Grid is built upon the combined experience of over 100 operations & project delivery teams and the challenges they faced.</p>
+        <div>
+            <form action="">
+            <input type="text" placeholder="Name" class="Aniket_input">
+            <input type="text" placeholder="Email address *" class="Aniket_input">
+            <select name="pets" id="pet-select" class="Aniket_select">
+                <option value="">Industry</option>
+                <option value="dog">Industry</option>
+                <option value="cat">Mining</option>
+                <option value="hamster">Infrastructure</option>
+                <option value="parrot">Manufacturing</option>
+                <option value="spider">F&B</option>
+                <option value="goldfish">Others</option>
+              </select>
+              <button class="btn btn-primary Aniket_button" >Subscribe</button>
+              <input type="checkbox" name="" id="" class="Aniket_checkbox">
+              <span>I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</span>
+            </form>
+        </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
