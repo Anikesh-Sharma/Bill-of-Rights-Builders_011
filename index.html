@@ -124,7 +124,8 @@
 .Aniket_main_cont1>div:nth-child(1){
     
     grid-area: Q1;
-    
+    animation: Aniket_S ;
+    animation-timeline: view();
 }
 .Aniket_main_cont1>div:nth-child(2){
     display: flex;
@@ -198,9 +199,13 @@
 }
 .Aniket_main_cont1>div:nth-child(4){
     grid-area: Q4;
+    animation: Aniket_S ;
+    animation-timeline: view();
 }
 .Aniket_main_cont1>div:nth-child(5){
     grid-area: Q5;
+    animation: Aniket_S ;
+    animation-timeline: view();
 }
 
 .Aniket_main_cont1>div:nth-child(7){
@@ -231,6 +236,8 @@
 }
 .Aniket_main_cont1>div:nth-child(8){
     grid-area: Q8;
+    animation: Aniket_S ;
+    animation-timeline: view();
 }
 
 .Aniket_lower_cont{
@@ -297,7 +304,7 @@
     padding: 3px 29px;
 }
 .Aniket_lower_cont>div>form>span{
-    font-size: 7px;
+    font-size: 12px;
 }
 @keyframes Aniket_section_cont1 {
     0%{
@@ -395,9 +402,28 @@
 .Aniket_checkbox{
     display: block;
 }
-
-
-
+}
+@keyframes Aniket_S{
+    0%{
+        transform: scale(0.1);
+        opacity: -1;
+    }
+    30%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75%{
+        transform: scale(1);
+        opacity: 2;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: -1;
+    }
 }
 
   /* ------- Ashwini -------- */
