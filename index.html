@@ -13,6 +13,65 @@
     <style>
         /* ------- Ashwini -------- */
         
+        
+        @keyframes a1{
+            from{
+                
+                opacity: 50;
+                scale: 0.5;
+            }
+            to{
+               
+                opacity:100;
+                scale:1.5;
+            }
+        }
+
+        @media(max-width:768px){ 
+            @keyframes a1{
+            from{
+                
+                opacity: 50;
+                scale: 0.5;
+            }
+            to{
+               
+                opacity:100;
+                scale:1;
+            }
+        }
+        }
+        div#Ash_cards{
+            animation: a1 linear;
+            animation-timeline: view();
+        }   
+
+
+
+        div.Ash_logos{
+            width: 100%;
+            margin-top: 80px;
+            display: flex;
+            justify-content: flex-start;
+            overflow: hidden;
+           
+        }
+        div.Ash_logos>span{
+            
+            animation: move 10s linear infinite;
+        }
+
+        @keyframes move{
+            0%{
+                transform : translateX(1);
+            }
+            100%{
+                transform: translateX(-100vw);
+            }
+
+        }
+
+
         @media (max-width:768px){
             div#Ash_img{
                 display: flex;
@@ -26,6 +85,7 @@
             
         }
         
+        
         @media (min-width:993px){
             div#Ash_cards{
                 display: grid;
@@ -36,10 +96,22 @@
         @media (max-width:768px){
             div#Ash_cards{
                 display: grid;
-                padding-left: 50px;
-              
+                /* padding-left: 50px; */
+                
                 grid-template-areas:"a1 a2 "
                                     "a3 a4";
+        
+            }
+        }
+        @media (max-width:450px){
+            div#Ash_cards{
+                display: grid;
+                /* padding-left: 50px; */
+                
+                grid-template-areas:"a1 "
+                                    "a2 "
+                                    "a3 "
+                                    "a4";
         
             }
         }
@@ -110,6 +182,7 @@
             font-size: 18px;
             font-weight: 400;
         }
+        
         @media (max-width:768px){
             div.Ash_box{
                 width: 500px;
@@ -133,6 +206,38 @@
                 font-weight: 400;
         }
         }
+        @media (max-width:450px){
+            div.Ash_box{
+                width: 300px;
+                height: 200px;
+                margin: auto;
+                margin-top: 70px;
+                margin-bottom: 100px;
+                border: 2px solid rgb(3, 187, 137);
+                border-radius: 15px;
+                display: flex;
+            
+            }
+            div.Ash_box>div:nth-of-type(1){
+            width: 50%;
+            height: 100%;
+            color:rgb(3, 187, 137);
+            padding: 30px 15px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            }
+            div.Ash_box>div:nth-of-type(2){
+                width: 50%;
+                height: 100%;
+                border-radius: 15px;
+                background-color:rgb(3, 187, 137) ;
+                color:white;
+                padding: 20px 25px;
+                font-size: 10px;
+                font-weight: 200;
+        }
+        }
         @media (min-width:768px) and (max-width:992px){
             div.Ash_box{
                 width: 700px;
@@ -146,6 +251,7 @@
             
             }
         }
+       
         
         /* -------Ashwini-------- */
     </style>
@@ -162,9 +268,9 @@
                     <p class="text-center mx-auto" style="max-width: 620px; margin-top: 20px; font-size: 18px; font-family: 'Inter', sans-serif;">Say goodbye to paper logs, cluttered spreadsheets and inflexible tools. Streamline your team's communications and increase efficiency.</p>
                         
                     <div id="Ash_img" class="row" style="margin-top: 50px;">
-                        <div class="col-4" style=" display:flex; flex-direction:column; justify-content:center ; align-items: center; " >
-                                <button  style="background-color: white; color:rgb(12, 108, 247); padding:10px 30px; border-radius: 8px;  border-color:rgb(189, 211, 242);" type ="button">Watch A Video</button><br>
-                                <button  style="background-color: rgb(12, 108, 247); color:white; padding:10px 32px; border-radius: 8px; " type="button">Book A Demo</button>
+                        <div  class="col-4" style=" display:flex; flex-direction:column; justify-content:center ; align-items: center; " >
+                                <button  style="background-color: rgb(240, 243, 245); color:rgb(12, 108, 247); padding:10px 30px; border-radius: 8px; border: none; " type ="button">Watch A Video</button><br>
+                                <button  style="background-color: rgb(12, 108, 247); color:white; padding:10px 32px; border-radius: 8px; border: none;" type="button">Book A Demo</button>
                         </div>
                         <div class="col-8" style=" height:500px;">
                             <img width = "100%" height = "100%" src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64992370ece577a6a4b5523e_Group%2048096722.svg" alt="">
@@ -173,8 +279,50 @@
                 </div>
            
             </div>
+            
+            
+                <div class="Ash_logos">
+                  <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca471aa4b023a6cd68b_Calidus.png" alt="">
+                  </span>
+                  <span><img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e4022f62f5631a43e49_Genus.png" alt=""></span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca6d380681dff28c6d6_Jackson.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e4278cc598de83d6ab2_Tirupati.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca30cba9edcb6c3f51b_Celebrity%20Fashion%20Limited.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca46348e831372ae589_CGI.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca521453d03f92a04c1_Hotel%20Polo%20Towers.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca11fb3216b94fb81672e7_Tata%20Steel.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca5a2294f65cd735d92_Expedio.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e410bc306298bd813a6_Platina%20Resources.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca7a2294f65cd735e39_Walkabout.png" alt="">
+                </span>
+                <span>
+                    <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca4cd86c6b62c92ea9d_EY.png" alt="">
+                </span>
+                
+                </div>
+              </div>
+           
+           
                 <div class="container-xxl ">
-                    <h1 class="text-center" style="margin-top: 100px;">Grid streamlines operations in asset heavy industries.</h1>
+                    <h1 class="text-center" style="margin-top: 100px; color: black;">Grid streamlines operations in asset heavy industries.</h1>
                     <div id="Ash_cards" class=" text-center mx-auto" style="max-width :1000px;  gap:55px ; margin-top: 70px;">
                         <div class="rounded-3" style="width: 200px; height:150px; border:1px solid rgb(3, 187, 137); color:rgb(3, 187, 137); box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;">
                             <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/649932819ebdd8aa63bf825c_Frame%20119.svg" alt="">
@@ -199,7 +347,7 @@
                 <div>Efficient Mineral Exploration & Mining Production</div>
                 <div>Grid's powerful surveys and checklists allow Mineral Exploration, Mining Services & Mining Production teams to reduce time spent on data-intensive tasks, and focus on efficiency.</div>
             </div>
-            
+       
         </section>
     </main>
 </body>
