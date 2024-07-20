@@ -12,8 +12,60 @@
 
     <style>
         /* ------- Ashwini -------- */
-        
-        
+        div#Ash_heading{
+            color:rgb(27, 138, 243);
+            width:300px; 
+            padding: 15px; 
+            border-radius: 30px;
+            margin:auto; 
+            border: 1px solid rgb(192, 222, 250); 
+            margin-top: 30px;
+        }
+        div#Ash_heading:hover{
+            background-color: rgb(25, 89, 239);
+            color: white;
+            
+        }
+        button#Ash_btn1{
+            background-color: white; 
+            color:rgb(12, 108, 247); 
+            padding:10px 20px;
+            border-radius: 8px; 
+            border-color: rgba(96, 137, 193, 0.416);
+        }
+        button#Ash_btn1:hover{
+            background-color: rgb(12, 108, 244);
+            color:white;
+        }
+
+        button#Ash_btn2{
+            background: linear-gradient(rgb(116, 138, 237), rgb(23, 67, 226));
+            color:white; 
+            padding:12px 22px; 
+            border-radius: 8px; 
+            border: none;
+        }
+        button#Ash_btn2:hover{
+            background: linear-gradient(rgb(226, 234, 241), rgb(224, 232, 237));
+            color: blue;
+        }
+        @keyframes img_animation{
+            0%{
+                opacity: 1;
+                scale: 1;
+            }
+            100%{
+                opacity: 2;
+                scale: 0.5;
+            }
+        }
+        div#Ash_main_img{
+            animation: img_animation linear;
+            animation-timeline: scroll();
+        }
+
+
+
         @keyframes a1{
             from{
                 
@@ -45,8 +97,6 @@
             animation: a1 linear;
             animation-timeline: view();
         }   
-
-
 
         div.Ash_logos{
             width: 100%;
@@ -106,7 +156,6 @@
         @media (max-width:450px){
             div#Ash_cards{
                 display: grid;
-                /* padding-left: 50px; */
                 
                 grid-template-areas:"a1 "
                                     "a2 "
@@ -261,7 +310,7 @@
         <section>
             <div id = "Ash_container" class="container-fluid  " style= "height:auto; background: linear-gradient(white, rgb(240, 247, 255));">
                 <div class="container-xxl " style=" height: auto;">
-                    <div style=" width:300px; padding: 15px; border-radius: 30px; margin:auto; border: 1px solid rgb(192, 222, 250); color:rgb(27, 138, 243); margin-top: 30px;">FRONTLINE OPERATIONS PLATFORM</div>
+                    <div id="Ash_heading"  >FRONTLINE OPERATIONS PLATFORM</div>
                     <h1 style="max-width: 800px; margin :auto ; text-align:center; margin-top:20px; font-size: 50px; font-weight: bold; color:rgb(51, 51, 51); font-family: 'Inter', sans-serif;">Collect And Analyse Your
                         Frontline Operations Data</h1>
 
@@ -269,15 +318,14 @@
                         
                     <div id="Ash_img" class="row" style="margin-top: 50px;">
                         <div  class="col-4" style=" display:flex; flex-direction:column; justify-content:center ; align-items: center; " >
-                                <button  style="background-color: rgb(240, 243, 245); color:rgb(12, 108, 247); padding:10px 30px; border-radius: 8px; border: none; " type ="button">Watch A Video</button><br>
-                                <button  style="background-color: rgb(12, 108, 247); color:white; padding:10px 32px; border-radius: 8px; border: none;" type="button">Book A Demo</button>
+                                <button  id="Ash_btn1"  type ="button">Watch A Video</button><br>
+                                <button  id="Ash_btn2"  type="button">Book A Demo</button>
                         </div>
-                        <div class="col-8" style=" height:500px;">
-                            <img width = "100%" height = "100%" src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64992370ece577a6a4b5523e_Group%2048096722.svg" alt="">
+                        <div id="Ash_main_img" class="col-8" style=" height:500px;">
+                            <img  width = "100%" height = "100%" src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64992370ece577a6a4b5523e_Group%2048096722.svg" alt="">
                         </div>
                       </div>
                 </div>
-           
             </div>
             
             
@@ -318,7 +366,7 @@
                 </span>
                 
                 </div>
-              </div>
+             
            
            
                 <div class="container-xxl ">
