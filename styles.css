@@ -271,7 +271,7 @@
 }
 .Aniket_input{
     width: 180px;
-    height: 26px;
+    height: 30px;
     padding: 3.5px;
     padding-left: 9px;
     border: none;
@@ -279,8 +279,8 @@
 }
 .Aniket_select{
     width: 180px;
-    height: 26px;
-    padding: 3.5px;
+    height: 30px;
+    padding: 4px;
     padding-left: 9px;
     border: none;
     border-radius: 4px;
@@ -288,19 +288,23 @@
 
 }
 .Aniket_button{
-    padding: 3px 29px;
+    padding: 3.5px 29px;
+}
+.Aniket_lower_cont>div>form>div>input{
+    width: 20px;
 }
 .Aniket_lower_cont>div>form>div>span{
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 500;
 }
 @keyframes Aniket_section_cont1 {
     0%{
         transform: translate(500px);
         opacity: 0;
     }
-    60%{
+    50%{
         transform: translate(0px);
-        opacity: 2;
+        opacity: 5;
     }
 }
 @keyframes Aniket_section_cont2 {
@@ -308,9 +312,9 @@
         transform: translate(-500px);
         opacity: 0;
     }
-    60%{
+    50%{
         transform: translate(0px);
-        opacity: 2;
+        opacity: 5;
     }
 } 
 @media (width <= 900px) {
