@@ -11,592 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-    *{
-      font-family: "Inter", sans-serif;
-      box-sizing: border-box;
-      margin: 0px;
-      padding: 0px;
-    }
-    .main_nav{
-        position: sticky;
-        top: 0px;
-        z-index: 2;
-    }
-    .Aniket_nav{
-        padding: 0px 10px;
-        
-    }
-    .aniket_nav_button{
-        padding: 7px 15px;
-        border: 1.5px solid rgb(0, 102, 255);
-        border-radius:8px ;
-        background-color: rgb(237, 244, 254);
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .aniket_nav_button:hover{
-        background-color: rgb(0, 102, 255);
-        color: white;
-    }
-    .aniket_nav_fonts{
-        margin-left: 30px;
-    }
-    .aniket_nav_fonts{
-
-        font-size: 18px;
-        font-weight: 500;
-        color: rgb(76, 75, 75);
-        
-    }
-    .aniket_nav_fonts:hover{
-        color: rgb(0, 102, 255);;
-    }
-    .Aniket_nav_ele>span{
-        font-size: 19px;
-        font-weight: 600;
-        margin-right: 30px;
-        color: rgb(75, 74, 74);
-        padding: 10px;
-    }
-    .Aniket_nav_ele>span:hover{
-        background-color: #e7eaf1;
-        border-radius: 5px;
-        padding: 10px;
-
-    }
-    .aniket_logo{
-        font-size: 40px;
-        font-weight: 900;
-        color: rgb(29, 135, 244);
-    }
-    .Aniket_section{
-        width: 100vw;
-        height: auto;
-        background: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
-    }
-     .Aniket_section_cont{
-        max-width: 800px;
-        background-color: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
-        height: auto;
-        margin: auto;
-        padding: 30px 0px;
-     }
-     .Aniket_section_cont>p:nth-child(1){
-        color: white;
-        max-width: 550px;
-        font-size: 40px;
-        font-weight: 600;
-        text-align: center;
-        margin: auto;
-        animation: Aniket_section_cont2 ;
-        animation-timeline:view() ;
-        overflow: hidden;
-     }
-     .Aniket_section_cont>p:nth-child(2){
-        color: white;
-        max-width: 600px;
-        font-size: 14px;
-        text-align: center;
-        margin: auto;
-        margin-top: 20px;
-        animation: Aniket_section_cont1 2s  forwards;
-        animation-timeline:view() ;
-        overflow: hidden;
-     }
-
-.Aniket_main_cont1{
-    max-width: 1100px;
-    height: auto;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-areas: " Q1 Q2"
-                            "Q3 Q4"
-                            "Q5 Q6"
-                            "Q7 Q8";
-    margin-top: 40px;
-    gap: 40PX;
-
-
-}
-.Aniket_main_cont1>div:nth-child(1){
-    
-    grid-area: Q1;
-    animation: Aniket_S ;
-    animation-timeline: view();
-}
-.Aniket_main_cont1>div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: Aniket_section_cont1 2s  forwards;
-    animation-timeline:view() ;
-    grid-area: Q2;
-    overflow: hidden;
-    
-}
-.Aniket_main_cont1>div:nth-child(2)>h2{
-    color: rgb(49, 49, 49);
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(2)>p{
-    width: 400px;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(2)>h5{
-    color: rgb(41, 146, 251);
-}
-
-
-.Aniket_main_cont1>div:nth-child(3){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: Aniket_section_cont2 2s  forwards;
-    animation-timeline:view() ;
-    grid-area: Q3;
-    overflow: hidden;
-    
-    
-}
-.Aniket_main_cont1>div:nth-child(3)>h2{
-    color: rgb(49, 49, 49);
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(3)>p{
-    width: 400px;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(3)>h5{
-    color: rgb(41, 146, 251);
-}
-.Aniket_main_cont1>div:nth-child(6){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: Aniket_section_cont1 2s  forwards;
-    animation-timeline:view() ;
-    grid-area: Q6;
-    overflow: hidden;
-    
-    
-}
-.Aniket_main_cont1>div:nth-child(6)>h2{
-    color: rgb(49, 49, 49);
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(6)>p{
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(6)>h5{
-    color: rgb(41, 146, 251);
-    width: 420px;
-}
-.Aniket_main_cont1>div:nth-child(4){
-    grid-area: Q4;
-    animation: Aniket_S ;
-    animation-timeline: view();
-}
-.Aniket_main_cont1>div:nth-child(5){
-    grid-area: Q5;
-    animation: Aniket_S ;
-    animation-timeline: view();
-}
-
-.Aniket_main_cont1>div:nth-child(7){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: Aniket_section_cont2 2s  forwards;
-    animation-timeline:view() ;
-    grid-area: Q7;
-    overflow: hidden;
-    
-    
-}
-.Aniket_main_cont1>div:nth-child(7)>h2{
-    
-    width: 300px;
-    color: rgb(49, 49, 49);
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(7)>p{
-    width: 350px;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-.Aniket_main_cont1>div:nth-child(7)>h5{
-    color: rgb(41, 146, 251);
-    width: 420px;
-}
-.Aniket_main_cont1>div:nth-child(8){
-    grid-area: Q8;
-    animation: Aniket_S ;
-    animation-timeline: view();
-}
-
-.Aniket_lower_cont{
-    max-width: 900px;
-        background-color: linear-gradient(to right, rgb(41, 146, 251), rgb(8, 73, 139));
-        height: auto;
-        margin: auto;
-        padding: 30px 0px;
-        
-}
-.Aniket_lower_cont>p:nth-child(1){
-    color: white;
-        max-width: 600px;
-        font-size: 30px;
-        font-weight: 600;
-        text-align: center;
-        margin: auto;
-        
-
-}
-.Aniket_lower_cont>p:nth-child(2){
-        color: white;
-        max-width: 450px;
-        font-size: 14px;
-        text-align: center;
-        margin: auto;
-        margin-top: 20px;
-
-}
-
-.Aniket_lower_cont{
-    margin-top: 40px;
-}
-.Aniket_lower_cont>div{
-    width: 700px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-
-}
-.Aniket_input{
-    width: 180px;
-    height: 26px;
-    padding: 3.5px;
-    padding-left: 9px;
-    border: none;
-    border-radius: 4px;
-}
-.Aniket_select{
-    width: 180px;
-    height: 26px;
-    padding: 3.5px;
-    padding-left: 9px;
-    border: none;
-    border-radius: 4px;
-    color: gray;
-
-}
-.Aniket_button{
-    padding: 3px 29px;
-}
-.Aniket_lower_cont>div>form>span{
-    font-size: 12px;
-}
-@keyframes Aniket_section_cont1 {
-    0%{
-        transform: translate(500px);
-        opacity: 0;
-    }
-    60%{
-        transform: translate(0px);
-        opacity: 2;
-    }
-}
-@keyframes Aniket_section_cont2 {
-    0%{
-        transform: translate(-500px);
-        opacity: 0;
-    }
-    60%{
-        transform: translate(0px);
-        opacity: 2;
-    }
-} 
-@media (width <= 900px) {
-    .Aniket_section_cont>p:nth-child(1){
-        max-width: 350px ;
-        font-size: 25PX;
-        text-align: center          ;
-     }
-     .Aniket_section_cont>p:nth-child(2){
-        max-width: 350px ;
-        font-size: auto;
-     }
-
-}
-@media (width <= 750px) {
-    .Aniket_section_cont>p:nth-child(1){
-        max-width: 300px ;
-        font-size: 20PX;
-        text-align: center          ;
-     }
-     .Aniket_section_cont>p:nth-child(2){
-        max-width: 300px ;
-        font-size: auto;
-     }
-
-}
-@media (width <= 450px) {
-    .Aniket_section_cont>p:nth-child(1){
-        max-width: 200px ;
-        font-size: 18PX;
-        text-align: center   
-    
-               ;
-     }
-     .Aniket_section_cont>p:nth-child(2){
-        max-width: 250px ;
-        font-size: auto;
-     }
-
-}
-@media (width <= 750px) {
-    .Aniket_main_cont1{
- 
-    grid-template-columns: repeat(1,1fr);
-    grid-template-areas: " Q1"
-                            " Q2"
-                            "Q4" 
-                            "Q3"
-                            "Q5"
-                             "Q6"
-                            "Q8"
-                            " Q7";
-   margin-left:20px ;
-
-}
-
-}
-
-@media (width <= 450px) {
-    .Aniket_lower_cont>div{
-    width: 70vw;
-    flex-wrap: wrap;
-
-}
-.Aniket_checkbox{
-    display: block;
-}
-
-}
-@media (width <= 750px) {
-    .Aniket_lower_cont>div{
-    width: 70vw;
-    flex-wrap: wrap;
-
-}
-.Aniket_checkbox{
-    display: block;
-}
-}
-@keyframes Aniket_S{
-    0%{
-        transform: scale(0.1);
-        opacity: -1;
-    }
-    30%{
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    60%{
-        transform: scale(1.2);
-        opacity: 1;
-    }
-    75%{
-        transform: scale(1);
-        opacity: 2;
-    }
-    100%{
-        transform: scale(0.5);
-        opacity: -1;
-    }
-}
-
-  /* ------- Ashwini -------- */
-        
-  @media (max-width:768px){
-            div#Ash_img{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-               
-            }
-            div#Ash_img>div:nth-of-type(1)>button{
-                width: 200px;
-            }
-            
-        }
-        
-        @media (min-width:993px){
-            div#Ash_cards{
-                display: grid;
-                grid-template-areas:"a1 a2 a3 a4";
-        
-            }
-        }
-        @media (max-width:768px){
-            div#Ash_cards{
-                display: grid;
-                padding-left: 50px;
-              
-                grid-template-areas:"a1 a2 "
-                                    "a3 a4";
-        
-            }
-        }
-        @media (min-width:768px) and (max-width:992px){
-            div#Ash_cards{
-                display: grid;
-                grid-template-areas:"a1 a2 a3"
-                                    " a5 a4 a6";
-        
-            }
-        }
-        div#Ash_cards>div:nth-of-type(1){
-            grid-area:a1 ;
-        }
-        div#Ash_cards>div:nth-of-type(2){
-            grid-area:a2;
-        }
-         div#Ash_cards>div:nth-of-type(3){
-            grid-area:a3;
-        }
-        div#Ash_cards>div:nth-of-type(4){
-            grid-area:a4;
-        } 
-        
-        div#Ash_cards>div:nth-of-type(2):hover{
-            background-color: rgba(183, 244, 244, 0.407);
-            border: 1px solid rgb(59, 201, 202);
-
-        }
-        div#Ash_cards>div:nth-of-type(3):hover{
-            background-color: rgba(238, 187, 201, 0.373);
-            border: 1px solid rgb(242, 160, 185);
-
-        }
-        div#Ash_cards>div:nth-of-type(4):hover{
-            background-color: rgba(241, 195, 149, 0.348);
-            border: 1px solid rgb(244, 137, 29);
-
-        }
-        
-        div.Ash_box{
-            width: 1000px;
-            height: 200px;
-            margin: auto;
-            margin-top: 70px;
-            margin-bottom: 100px;
-            border: 2px solid rgb(3, 187, 137);
-            border-radius: 15px;
-            display: flex;
-           
-        }
-        div.Ash_box>div:nth-of-type(1){
-            width: 50%;
-            height: 100%;
-            color:rgb(3, 187, 137);
-            padding: 50px 30px;
-            font-size: 30px;
-            text-align: center;
-            font-weight: 500;
-        }
-        div.Ash_box>div:nth-of-type(2){
-            width: 50%;
-            height: 100%;
-            border-radius: 15px;
-            background-color:rgb(3, 187, 137) ;
-            color:white;
-            padding: 50px 40px;
-            font-size: 18px;
-            font-weight: 400;
-        }
-        @media (max-width:768px){
-            div.Ash_box{
-                width: 500px;
-                height: 300px;
-                margin: auto;
-                margin-top: 70px;
-                margin-bottom: 100px;
-                border: 2px solid rgb(3, 187, 137);
-                border-radius: 15px;
-                display: flex;
-            
-            }
-            div.Ash_box>div:nth-of-type(2){
-                width: 50%;
-                height: 100%;
-                border-radius: 15px;
-                background-color:rgb(3, 187, 137) ;
-                color:white;
-                padding: 30px 30px;
-                font-size: 18px;
-                font-weight: 400;
-        }
-        }
-        @media (min-width:768px) and (max-width:992px){
-            div.Ash_box{
-                width: 700px;
-                height: 300px;
-                margin: auto;
-                margin-top: 70px;
-                margin-bottom: 100px;
-                border: 2px solid rgb(3, 187, 137);
-                border-radius: 15px;
-                display: flex;
-            
-            }
-        }
-        
-        /* -------Ashwini-------- */
-
-
-
-
-    
-      .container {
-          text-align: center;
-      }
-      h1 {
-          color: #007bff;
-          margin-bottom: 10px;
-      }
-      p {
-          color: #666;
-          margin-bottom: 30px;
-      }
-      .nav-tabs {
-          border-bottom: 2px solid #dfe1e5;
-      }
-      .nav-link {
-          color: #666;
-          margin: 0 10px;
-      }
-      .nav-link.active {
-          color: #007bff;
-          border-color: #007bff;
-          border-bottom: 2px solid #007bff;
-      }
-      .tab-content img {
-          width: 100%;
-          max-width: 800px;
-          margin-top: 30px;
-      }
-</style>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container-xxl main_nav">
@@ -668,8 +83,8 @@
 
     
     <main>
-        <section>
-            <div id = "Ash_container" class="container-fluid  " style= "height:auto; background: linear-gradient(white, rgb(240, 247, 255));">
+        <section class="">
+            <div id = "Ash_container" class="container-fluid  aniket_animation " style= "height:auto; background: linear-gradient(white, rgb(240, 247, 255));">
                 <div class="container-xxl " style=" height: auto;">
                     <div style=" width:300px; padding: 10px; font-size: 12Px; text-align: center; border-radius: 30px; margin:auto; border: 1px solid rgb(192, 222, 250); color:rgb(27, 138, 243); margin-top: 30px;">FRONTLINE OPERATIONS PLATFORM</div>
                     <h1 style="max-width: 800px; margin :auto ; text-align:center; margin-top:20px; font-size: 50px; font-weight: bold; color:rgb(51, 51, 51); font-family: 'Inter', sans-serif;">Collect And Analyse Your
@@ -687,8 +102,47 @@
                         </div>
                       </div>
                 </div>
-           
             </div>
+
+            <div class="Ash_logos">
+                <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca471aa4b023a6cd68b_Calidus.png" alt="">
+                </span>
+                <span><img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e4022f62f5631a43e49_Genus.png" alt=""></span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca6d380681dff28c6d6_Jackson.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e4278cc598de83d6ab2_Tirupati.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca30cba9edcb6c3f51b_Celebrity%20Fashion%20Limited.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca46348e831372ae589_CGI.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca521453d03f92a04c1_Hotel%20Polo%20Towers.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca11fb3216b94fb81672e7_Tata%20Steel.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca5a2294f65cd735d92_Expedio.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0e410bc306298bd813a6_Platina%20Resources.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca7a2294f65cd735e39_Walkabout.png" alt="">
+              </span>
+              <span>
+                  <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65ca0ca4cd86c6b62c92ea9d_EY.png" alt="">
+              </span>
+              </div>
+
+
+
                 <div class="container-xxl ">
                     <h1 class="text-center" style="margin-top: 100px;">Grid streamlines operations in asset heavy industries.</h1>
                     <div id="Ash_cards" class=" text-center mx-auto" style="max-width :1000px;  gap:55px ; margin-top: 70px;">
@@ -783,8 +237,8 @@
             <option value="goldfish">Others</option>
           </select>
           <button class="btn btn-primary Aniket_button" >Subscribe</button>
-          <input type="checkbox" name="" id="" class="Aniket_checkbox">
-          <span>I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</span>
+          <div><input type="checkbox" name="" id="" class="Aniket_checkbox">
+          <span>I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</span></div>
         </form>
     </div>
     </div>
@@ -824,7 +278,116 @@
           </div>
       </div>
   </div>
-  
-
+  <div class="container-deepa">
+    <h1 class="main-heading-deepa">The Operations Playbook</h1>
+    <div class="main-cards-deepa">
+      <div class="card-deepa">
+        <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/65202acc10e3df1dd59a7c4a_Your%20Capital-p-500.jpg" alt="Image 1" />
+        <h3>How to Efficiently Plan a Capital Project?</h3>
+        <h5 class="read-more-deepa">Read More</h5>
+      </div>
+      <div class="card-deepa">
+        <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/64f1aabd9b7c2cd947570d00_advanced-metering-interface-p-500.jpg" alt="Image 2" />
+        <h3>Unveiling the Holy Grail of Advanced Metering Interface <br /> The next Revolution in smart Metering Management</h3>
+        <h5 class="read-more-deepa">Read More</h5>
+      </div>
+      <div class="card-deepa">
+        <img src="https://cdn.prod.website-files.com/643f6daae8ef294c6b3c49ff/6548a73c2e324d51c9c4b86e_LAL-p-500.jpg" alt="Image 3" />
+        <h3>Operations Mangers as Citizen Developers: <br />Manufacturing</h3>
+        <h5 class="read-more-deepa">Read More</h5>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container-deepa">
+      <div class="footer-heading-deepa">Subscribe to the Grid Newsletter</div>
+      <div class="form-div-deepa">
+        <form class="footer-form-deepa">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Email" />
+          <select>
+            <option value="">Industry</option>
+            <option value="Industry">Industry</option>
+            <option value="Infrastructure">Infrastructure</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="F&B">F&B</option>
+            <option value="Other">Other</option>
+          </select>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="row-deepa">
+      <div class="col-deepa">
+        <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64992e0e130d679113b69495_Group%2048096700.svg" alt="Grid Logo" />
+        <h4>Changing how businesses build and use applications</h4>
+        <h4>Get a free trial for your company -></h4>
+        <p>
+          Shree Gopal Complex, <br />
+          Workongrid, 3P, Court Rd, <br />
+          Ranchi, Jharkhand 834001, <br />
+          India
+        </p>
+        <h4>+91-62032 49377</h4>
+        <h4>hello@workongrid.com</h4>
+        <div class="image-deepa">
+          <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89fff66b3e5cf7bc4d3_AWS%20Partner.png" alt="AWS Partner" />
+          <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89eca71bb3a5478daba_AWS%20QS.png" alt="AWS QS" />
+          <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a022f62f5631836e50_GDPR.png" alt="GDPR" />
+          <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89f5d824989670c4495_SOC-2.png" alt="SOC-2" />
+          <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a0b587a200a933e1bb_ISO-27001.png" alt="ISO-27001" />
+        </div>
+      </div>
+      <div class="col-deepa">
+        <h2>Platform</h2>
+        <h4>Overview</h4>
+        <h4>Security</h4>
+        <h4>Deployment Models</h4>
+        <h4>Workflow Builder</h4>
+        <h4>Business Intelligence</h4>
+        <h4>IoT Data</h4>
+        <h4>Integration</h4>
+        <h4>GIS Data</h4>
+      </div>
+      <div class="col-deepa">
+        <h2>Industry</h2>
+        <h4>Mining</h4>
+        <h4>Utilities</h4>
+        <h4>Infrastructure</h4>
+        <h4>Manufacturing</h4>
+        <h4>Food and Beverages</h4>
+      </div>
+      <div class="col-deepa">
+        <h2>Resources</h2>
+        <h4>Grid Academy</h4>
+        <h4>Help Articles</h4>
+        <h4>Infrastructure</h4>
+        <h4>Manufacturing</h4>
+        <h4>Food and Beverages</h4>
+      </div>
+      <div class="col-deepa">
+        <h2>Company</h2>
+        <h4>About us</h4>
+        <h4>Careers</h4>
+        <h4>Partners</h4>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright-deepa">
+      <div class="left-deepa">
+        <p>© Copyright 2023 Grid. All Rights Reserved.</p>
+        <p><a href="#">End User License Agreement</a></p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Cookie Policy</a></p>
+      </div>
+      <div class="right-deepa">
+        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
