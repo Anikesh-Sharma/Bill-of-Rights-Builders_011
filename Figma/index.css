@@ -1,11 +1,21 @@
 .link-logo-1svg {
   position: absolute;
-  top: 28px;
-  left: 315px;
+  top: 0;
+  left: 0;
   width: 167px;
   height: 32px;
-  overflow: hidden;
 }
+.nav-container-anikesh{
+  width: 1200px;
+  display: flex;
+  height: auto;
+  margin: auto;
+  padding-top: 20px;
+  justify-content: center;
+  
+
+}
+
 .link-home {
   text-decoration: none;
   position: relative;
@@ -318,14 +328,18 @@
 .header,
 .symbol4 {
   align-self: stretch;
+
 }
 .header {
   height: 70px;
   position: sticky;
   background-color: var(--color-white);
   top: 0;
+  margin: auto;
+  width: 1320px;
   z-index: 99;
   text-align: left;
+  margin-left: 0px;
   font-size: var(--font-size-mini-8);
   color: var(--color-midnightblue);
   font-family: var(--font-inter);
