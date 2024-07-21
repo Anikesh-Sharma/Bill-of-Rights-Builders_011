@@ -20,11 +20,29 @@
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 Aq5";
         padding: 0px 70px;
     }
     .Aniket_foot_cont>div:nth-child(1){
         width: 350px;
+        grid-area: Aq1;
     }
+    .Aniket_foot_cont>div:nth-child(2){
+       
+        grid-area: Aq2;
+    }
+    .Aniket_foot_cont>div:nth-child(3){
+       
+       grid-area: Aq3;
+   }
+   .Aniket_foot_cont>div:nth-child(4){
+       
+       grid-area: Aq4;
+   }
+   .Aniket_foot_cont>div:nth-child(5){
+       
+       grid-area: Aq5;
+   }
     .Aniket_foot_cont a{
         text-decoration: none;
         color: white;
@@ -118,7 +136,7 @@
         justify-content: center;
     }
     .Aniket_foot_form>input{
-        max-width: 220px;
+        width: 220px;
         height: 40px;
         border-radius: 10px;
         border: none;
@@ -169,8 +187,157 @@
         margin-right: 55px;       
     }
 
-    @media (width<=900px) {
+    @media (width<=920px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
         
+        padding: 0px 30px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 250px;
+    }        
+    }
+    @media (width<=740px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 "
+                                "Aq5 . . .";
+        padding: 0px 20px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }        
+    }
+    @media (width<=550px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3  "
+                                "Aq1 Aq4 Aq5";
+        padding: 0px 10px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 150px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }  
+    }
+    @media (width<=350px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "Aq1 Aq1"
+                            "Aq2 Aq3  "
+                            " Aq4 Aq5";
+        padding: 0px 0px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px;
+        gap: 2px;
+    }  
     }
 
 </style>
