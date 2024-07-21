@@ -558,7 +558,46 @@
             
             }
         }
-        
+        div#Ash_heading{
+            color:rgb(27, 138, 243);
+            width:300px;
+            padding: 15px;
+            border-radius: 30px;
+            margin:auto;
+            border: 1px solid rgb(192, 222, 250);
+            margin-top: 30px;
+        }
+        div#Ash_heading:hover{
+            background-color: rgb(25, 89, 239);
+            color: white;
+            transform: scale(1.2);
+        }
+        button#Ash_btn1{
+            background-color: white;
+            color:rgb(12, 108, 247);
+            padding:10px 20px;
+            border-radius: 8px;
+            border-color: rgba(96, 137, 193, 0.416);
+            border: none;
+        }
+        button#Ash_btn1:hover{
+            background-color: rgb(12, 108, 244);
+            color:white;
+            transform: scale(1.1);
+        }
+        button#Ash_btn2{
+            background: linear-gradient(rgb(116, 138, 237), rgb(23, 67, 226));
+            color:white;
+            padding:12px 22px;
+            border-radius: 8px;
+            border: none;
+        }
+        button#Ash_btn2:hover{
+            background: linear-gradient(rgb(226, 234, 241), rgb(224, 232, 237));
+            color: blue;
+            transform: scale(1.1);
+        }
+       
         /* -------Ashwini-------- */
 
 
