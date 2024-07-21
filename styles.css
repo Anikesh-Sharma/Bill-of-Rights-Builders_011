@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             height: auto;
-            background-color: #000;
+            background-color:transparent;
             flex-direction: column;
         }
         .container {
@@ -36,11 +36,13 @@
             align-items: center;
             border-right: 1px solid #444;
         }
+        
         .left-section-anikesh h1 {
             color: #1e90ff;
             font-size: 48px;
             margin: 0;
         }
+        
         .left-section-anikesh p {
             font-size: 18px;
             margin-top: 10px;
@@ -50,28 +52,34 @@
             padding: 40px;
             flex: 2;
         }
+        
         .form-section h2 {
             margin-bottom: 20px;
             font-size: 24px;
         }
+        
         .form-section .form-group {
             margin-bottom: 20px;
         }
+        
         .form-section .form-control,
         .form-section .form-check-input {
             background-color: #555;
             border: none;
             color: white;
         }
+        
         .form-section .form-control::placeholder {
             color: #aaa;
         }
+        
         .form-section button {
             background-color: #1e90ff;
             border: none;
             width: 100%;
             padding: 10px;
         }
+        
         .form-section button:hover {
             background-color: #007bff;
         }
@@ -85,6 +93,7 @@
             display: none;
             z-index: 5;
         }
+        
         .close-btn {
             position: absolute;
             top: 20px;
@@ -95,22 +104,17 @@
             font-size: 24px;
             cursor: pointer;
         }
+        
         .main_nav {
             position: sticky;
-            top: 0px;
+            top: 0;
             z-index: 2;
         }
+        
         .Aniket_nav {
-            padding: 0px 10px;
+            padding: 0 10px;
         }
-        .aniket_nav_button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        
         .aniket_nav_button {
             background-color: rgb(237, 244, 254);
             color: rgb(0, 102, 255);
@@ -121,23 +125,28 @@
             padding: 7px 15px;
             transition: all 0.3s ease;
         }
+        
         .aniket_nav_button:hover {
             background-color: rgb(0, 102, 255);
             color: white;
         }
+        
         .aniket_nav_fonts {
             margin-left: 30px;
             font-size: 18px;
             font-weight: 500;
             color: rgb(76, 75, 75);
         }
+        
         .aniket_nav_fonts:hover {
             color: rgb(0, 102, 255);
         }
+        
         .Aniket_nav_ele {
             display: flex;
             align-items: center;
         }
+        
         .Aniket_nav_ele > span {
             font-size: 19px;
             font-weight: 600;
@@ -145,11 +154,13 @@
             color: rgb(75, 74, 74);
             padding: 10px;
         }
+        
         .Aniket_nav_ele > span:hover {
             background-color: #e7eaf1;
             border-radius: 5px;
             padding: 10px;
         }
+        
         .aniket_logo {
             font-size: 40px;
             font-weight: 900;
