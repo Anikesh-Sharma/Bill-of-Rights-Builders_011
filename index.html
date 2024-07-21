@@ -1,29 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         * {
-            font-family: "Inter", sans-serif;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
+            font-family: 'Inter', sans-serif;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            flex-direction: column;
+        }
+        .container {
+            display: none;
+            max-width: 800px;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            z-index: 10;
+            color: white;
+        }
+        .left-section-anikesh {
+            background-color: #1a1a1a;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #444;
+        }
+        .left-section-anikesh h1 {
+            color: #1e90ff;
+            font-size: 48px;
+            margin: 0;
+        }
+        .left-section-anikesh p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .form-section {
+            background-color: #000;
+            padding: 40px;
+            flex: 2;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .form-section .form-group {
+            margin-bottom: 20px;
+        }
+        .form-section .form-control,
+        .form-section .form-check-input {
+            background-color: #555;
+            border: none;
+            color: white;
+        }
+        .form-section .form-control::placeholder {
+            color: #aaa;
+        }
+        .form-section button {
+            background-color: #1e90ff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+        .form-section button:hover {
+            background-color: #007bff;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 5;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .main_nav {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
         }
         .Aniket_nav {
             padding: 0px 10px;
         }
         .aniket_nav_button {
-            padding: 7px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .aniket_nav_button {
+            background-color: rgb(237, 244, 254);
+            color: rgb(0, 102, 255);
             border: 1.5px solid rgb(0, 102, 255);
             border-radius: 8px;
-            background-color: rgb(237, 244, 254);
             font-size: 18px;
             font-weight: 500;
+            padding: 7px 15px;
+            transition: all 0.3s ease;
         }
         .aniket_nav_button:hover {
             background-color: rgb(0, 102, 255);
@@ -37,6 +143,10 @@
         }
         .aniket_nav_fonts:hover {
             color: rgb(0, 102, 255);
+        }
+        .Aniket_nav_ele {
+            display: flex;
+            align-items: center;
         }
         .Aniket_nav_ele > span {
             font-size: 19px;
@@ -58,72 +168,114 @@
     </style>
 </head>
 <body>
-    <div class="container-xxl">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary Aniket_nav">
-            <div class="container-fluid">
-                <a class="navbar-brand aniket_logo" href="#">Flex.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Platform
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Platform</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Solutions
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link aniket_nav_fonts">Partners</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="Aniket_nav_ele">
-                        <span>Log In</span>
-                        <button class="aniket_nav_button">Talk To Us</button>
-                    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary Aniket_nav main_nav">
+        <div class="container-fluid">
+            <a class="navbar-brand aniket_logo" href="#">Flex.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">Platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">About Us</a>
+                    </li>
+                </ul>
+                <div class="Aniket_nav_ele">
+                    <span>Log in</span>
+                    <button class="aniket_nav_button" id="talkToUsBtn">Try for free</button>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div id="overlay" class="overlay"></div>
+        <div class="container" id="formContainer">
+            <button class="close-btn" id="closeFormBtn">&times;</button>
+            <div class="left-section-anikesh">
+                <h1>Grid.</h1>
+                <p>Connected Frontline Operations</p>
+            </div>
+            <div class="form-section">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last Name *">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone Number *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Company Name *">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Industry *</option>
+                        <option>Industry 1</option>
+                        <option>Industry 2</option>
+                        <option>Industry 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What problem are you trying to solve with Grid?">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What's your monthly budget to solve this problem?">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="privacyCheck">
+                    <label class="form-check-label" for="privacyCheck">I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</label>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
     </div>
-    
- </body>
- </html>
- 
+
+    <script>
+        document.getElementById('talkToUsBtn').addEventListener('click', function() {
+            document.getElementById('formContainer').style.display = 'flex';
+            document.getElementById('overlay').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('formContainer').style.opacity = '1';
+                document.getElementById('formContainer').style.transform = 'scale(1)';
+            }, 10);
+            this.style.display = 'none';
+        });
+
+        document.getElementById('closeFormBtn').addEventListener('click', function() {
+            closeForm();
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            closeForm();
+        });
+
+        function closeForm() {
+            document.getElementById('formContainer').style.opacity = '0';
+            document.getElementById('formContainer').style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                document.getElementById('formContainer').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+                document.getElementById('talkToUsBtn').style.display = 'block'; 
+            }, 500); 
+        }
+    </script>
+</body>
+</html>
