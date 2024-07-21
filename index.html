@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="container-xxl main_nav">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary Aniket_nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary Aniket_nav main_nav">
             <div class="container-fluid">
                 <a class="navbar-brand aniket_logo" href="#">Flex.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,61 +23,76 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Platform
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Platform</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link aniket_nav_fonts">Platform</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Solutions
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link aniket_nav_fonts">Solutions</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link aniket_nav_fonts">Resources</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link aniket_nav_fonts">Partners</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                About Us
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link aniket_nav_fonts">About Us</a>
                         </li>
                     </ul>
                     <div class="Aniket_nav_ele">
-                        <span>Log In</span>
-                        <button class="aniket_nav_button">Talk To Us</button>
+                        <span>Log in</span>
+                        <button class="aniket_nav_button" id="talkToUsBtn">Try for free</button>
                     </div>
                 </div>
             </div>
         </nav>
+        </div>
+        <div class="wrapper">
+            <div id="overlay" class="overlay"></div>
+            <div class="container" id="formContainer">
+                <button class="close-btn" id="closeFormBtn">&times;</button>
+                <div class="left-section-anikesh">
+                    <h1>Grid.</h1>
+                    <p>Connected Frontline Operations</p>
+                </div>
+                <div class="form-section">
+                    <h2>Contact Us</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Last Name *">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Company Name *">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Industry *</option>
+                            <option>Industry 1</option>
+                            <option>Industry 2</option>
+                            <option>Industry 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="What problem are you trying to solve with Grid?">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="What's your monthly budget to solve this problem?">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="privacyCheck">
+                        <label class="form-check-label" for="privacyCheck">I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</label>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
     </div>
     
 
@@ -387,5 +402,37 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    document.getElementById('talkToUsBtn').addEventListener('click', function() {
+        document.getElementById('formContainer').style.display = 'flex';
+        document.getElementById('overlay').style.display = 'block';
+        setTimeout(() => {
+            document.getElementById('formContainer').style.opacity = '1';
+            document.getElementById('formContainer').style.transform = 'scale(1)';
+        }, 10);
+        this.style.display = 'none';
+    });
+
+    document.getElementById('closeFormBtn').addEventListener('click', function() {
+        closeForm();
+    });
+
+    document.getElementById('overlay').addEventListener('click', function() {
+        closeForm();
+    });
+
+    function closeForm() {
+        document.getElementById('formContainer').style.opacity = '0';
+        document.getElementById('formContainer').style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('talkToUsBtn').style.display = 'block'; 
+        }, 500); 
+    }
+</script>
+
 </body>
 </html>
