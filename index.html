@@ -28,44 +28,58 @@
         padding: 0px 10px;
         
     }
-    .aniket_nav_button{
-        padding: 7px 15px;
-        border: 1.5px solid rgb(0, 102, 255);
-        border-radius:8px ;
-        background-color: rgb(237, 244, 254);
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .aniket_nav_button:hover{
-        background-color: rgb(0, 102, 255);
-        color: white;
-    }
-    .aniket_nav_fonts{
-        margin-left: 30px;
-    }
-    .aniket_nav_fonts{
-
-        font-size: 18px;
-        font-weight: 500;
-        color: rgb(76, 75, 75);
-        
-    }
-    .aniket_nav_fonts:hover{
-        color: rgb(0, 102, 255);;
-    }
-    .Aniket_nav_ele>span{
-        font-size: 19px;
-        font-weight: 600;
-        margin-right: 30px;
-        color: rgb(75, 74, 74);
-        padding: 10px;
-    }
-    .Aniket_nav_ele>span:hover{
-        background-color: #e7eaf1;
-        border-radius: 5px;
-        padding: 10px;
-
-    }
+    .main_nav {
+            position: sticky;
+            top: 0px;
+            z-index: 2;
+        }
+        .Aniket_nav {
+            padding: 0px 10px;
+        }
+        .Aniket_nav_button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .aniket_nav_button:hover {
+            background-color: rgb(0, 102, 255);
+            color: white;
+        }
+        .aniket_nav_fonts {
+            margin-left: 30px;
+        }
+        .aniket_nav_fonts {
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(76, 75, 75);
+        }
+        .Aniket_nav_ele {
+            display: flex;
+            align-items: center;
+        }
+        .aniket_nav_fonts:hover {
+            color: rgb(0, 102, 255);
+        }
+        .Aniket_nav_ele>span {
+            font-size: 19px;
+            font-weight: 600;
+            margin-right: 30px;
+            color: rgb(75, 74, 74);
+            padding: 10px;
+        }
+        .Aniket_nav_ele>span:hover {
+            background-color: #e7eaf1;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .aniket_logo {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgb(29, 135, 244);
+        }
     .aniket_logo{
         font-size: 40px;
         font-weight: 900;
@@ -566,7 +580,6 @@
 
 
 
-
     
       .container {
           text-align: center;
@@ -609,7 +622,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Platform
                             </a>
                             <ul class="dropdown-menu">
@@ -620,7 +633,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Solutions
                             </a>
                             <ul class="dropdown-menu">
@@ -631,7 +644,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Resources
                             </a>
                             <ul class="dropdown-menu">
@@ -645,7 +658,7 @@
                             <a href="#" class="nav-link aniket_nav_fonts">Partners</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 About Us
                             </a>
                             <ul class="dropdown-menu">
@@ -664,9 +677,6 @@
             </div>
         </nav>
     </div>
-    
-
-    
     <main>
         <section>
             <div id = "Ash_container" class="container-fluid  " style= "height:auto; background: linear-gradient(white, rgb(240, 247, 255));">
@@ -730,41 +740,7 @@
         <p>Grid is built upon the combined experience of over 100 operations & project delivery teams and the challenges they faced.</p>
     </div>
 </section>
-<main>
-    <div class="Aniket_main_cont1">
-        <div>
-            <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64c0cb51bf2b6e0702bfb637_product%20screens-71.svg" alt="">
-        </div>
-        <div>
-            <h2>No-Code Worksheets</h2>
-            <p>Enable seamless data gathering from mobile or web applications or bring data from other software or even devices using integrations.</p>
-            <h5>Build your own mobile apps in minutes not months.</h5>
-        </div>
-        <div>
-        <h2>Workflow Automation</h2>
-        <p>Automate anything using data links, approval flows, notifications, and reminders.</p>  
-        <h5>Create personalized alerts & reminders for your entire team.</h5>  
-        </div>
-        <div>
-            <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64a3c816c9f71e0de058b8b4_product%20screens-72.svg" alt="">
-        </div>
-        <div>
-            <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/6499434b9ebdd8aa6313f94b_product%20screens-49.svg" alt="">
-        </div>
-        <div>
-            <h2>
-                Dashboard Builders</h2>
-                <p>Track and visualize all your data with dashboards.</p>
-                <h5>Get a real-time view into the health of your business and easily track KPIs.</h5>
-        </div>
-        <div><h2>Team & Access
-            Management</h2>
-            <p>Ensure personalized app experiences and data compliance with teams and granular access management.</p>
-            <h5>Each application is personalized for the end-user.</h5>
-        </div>
-        <div><img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/64c0cb514f9a861231d0e5c3_product%20screens-79.svg" alt=""></div>
-    </div>
-</main>
+
 <section class="Aniket_section">
     <div class="Aniket_lower_cont">
         <p>Access The Operations Playbook</p>
@@ -825,6 +801,20 @@
       </div>
   </div>
   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const navbarToggler = document.querySelector('.navbar-toggler');
+          const navbarCollapse = document.querySelector('#navbarSupportedContent');
 
+          navbarToggler.addEventListener('click', function () {
+              if (navbarCollapse.classList.contains('show')) {
+                  navbarCollapse.classList.remove('show');
+              } else {
+                  navbarCollapse.classList.add('show');
+              }
+          });
+      });
+  </script>
 </body>
 </html>
