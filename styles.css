@@ -6,58 +6,167 @@
       margin: 0px;
       padding: 0px;
     }
-    .main_nav{
-        position: sticky;
-        top: 0px;
-        z-index: 2;
-    }
-    .Aniket_nav{
-        padding: 0px 10px;
+   .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color:transparent;
+            flex-direction: column;
+        }
+        .container {
+            display: none;
+            max-width: 800px;
+            background-color: #333;
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            z-index: 10;
+            color: white;
+        }
+        .left-section-anikesh {
+            background-color: #1a1a1a;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #444;
+        }
         
-    }
-    .aniket_nav_button{
-        padding: 7px 15px;
-        border: 1.5px solid rgb(0, 102, 255);
-        border-radius:8px ;
-        background-color: rgb(237, 244, 254);
-        font-size: 18px;
-        font-weight: 500;
-    }
-    .aniket_nav_button:hover{
-        background-color: rgb(0, 102, 255);
-        color: white;
-    }
-    .aniket_nav_fonts{
-        margin-left: 30px;
-    }
-    .aniket_nav_fonts{
-
-        font-size: 18px;
-        font-weight: 500;
-        color: rgb(76, 75, 75);
+        .left-section-anikesh h1 {
+            color: #1e90ff;
+            font-size: 48px;
+            margin: 0;
+        }
         
-    }
-    .aniket_nav_fonts:hover{
-        color: rgb(0, 102, 255);;
-    }
-    .Aniket_nav_ele>span{
-        font-size: 19px;
-        font-weight: 600;
-        margin-right: 30px;
-        color: rgb(75, 74, 74);
-        padding: 10px;
-    }
-    .Aniket_nav_ele>span:hover{
-        background-color: #e7eaf1;
-        border-radius: 5px;
-        padding: 10px;
+        .left-section-anikesh p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .form-section {
+            background-color: #000;
+            padding: 40px;
+            flex: 2;
+        }
+        
+        .form-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        
+        .form-section .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-section .form-control,
+        .form-section .form-check-input {
+            background-color: #555;
+            border: none;
+            color: white;
+        }
+        
+        .form-section .form-control::placeholder {
+            color: #aaa;
+        }
+        
+        .form-section button {
+            background-color: #1e90ff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        .form-section button:hover {
+            background-color: #007bff;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 5;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .main_nav {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        
+        .Aniket_nav {
+            padding: 0 10px;
+        }
+        
+        .aniket_nav_button {
+            background-color: rgb(237, 244, 254);
+            color: rgb(0, 102, 255);
+            border: 1.5px solid rgb(0, 102, 255);
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 7px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .aniket_nav_button:hover {
+            background-color: rgb(0, 102, 255);
+            color: white;
+        }
+        
+        .aniket_nav_fonts {
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(76, 75, 75);
+        }
+        
+        .aniket_nav_fonts:hover {
+            color: rgb(0, 102, 255);
+        }
+        
+        .Aniket_nav_ele {
+            display: flex;
+            align-items: center;
+        }
+        
+        .Aniket_nav_ele > span {
+            font-size: 19px;
+            font-weight: 600;
+            margin-right: 30px;
+            color: rgb(75, 74, 74);
+            padding: 10px;
+        }
+        
+        .Aniket_nav_ele > span:hover {
+            background-color: #e7eaf1;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .aniket_logo {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgb(29, 135, 244);
+        }
 
-    }
-    .aniket_logo{
-        font-size: 40px;
-        font-weight: 900;
-        color: rgb(29, 135, 244);
-    }
     .Aniket_section{
         width: 100vw;
         height: auto;
@@ -473,22 +582,26 @@
         div#Ash_cards>div:nth-of-type(1):hover{
             background-color: rgba(183, 244, 244, 0.407);
             border: 1px solid rgb(59, 201, 202);
+            transform: scale(1.1);
 
         }
         
         div#Ash_cards>div:nth-of-type(2):hover{
             background-color: rgba(183, 244, 244, 0.407);
             border: 1px solid rgb(59, 201, 202);
+            transform: scale(1.1);
 
         }
         div#Ash_cards>div:nth-of-type(3):hover{
             background-color: rgba(238, 187, 201, 0.373);
             border: 1px solid rgb(242, 160, 185);
+            transform: scale(1.1);
 
         }
         div#Ash_cards>div:nth-of-type(4):hover{
             background-color: rgba(241, 195, 149, 0.348);
             border: 1px solid rgb(244, 137, 29);
+            transform: scale(1.1);
 
         }
         
@@ -558,289 +671,448 @@
             
             }
         }
-        
+        div#Ash_heading{
+            color:rgb(27, 138, 243);
+            width:300px;
+            padding: 15px;
+            border-radius: 30px;
+            margin:auto;
+            border: 1px solid rgb(192, 222, 250);
+            margin-top: 30px;
+        }
+        div#Ash_heading:hover{
+            background-color: rgb(25, 89, 239);
+            color: white;
+            transform: scale(1.2);
+        }
+        button#Ash_btn1{
+            background-color: white;
+            color:rgb(12, 108, 247);
+            padding:10px 20px;
+            border-radius: 8px;
+            border-color: rgba(96, 137, 193, 0.416);
+            border: none;
+        }
+        button#Ash_btn1:hover{
+            background-color: rgb(12, 108, 244);
+            color:white;
+            transform: scale(1.1);
+        }
+        button#Ash_btn2{
+            background: linear-gradient(rgb(116, 138, 237), rgb(23, 67, 226));
+            color:white;
+            padding:12px 22px;
+            border-radius: 8px;
+            border: none;
+        }
+        button#Ash_btn2:hover{
+            background: linear-gradient(rgb(226, 234, 241), rgb(224, 232, 237));
+            color: blue;
+            transform: scale(1.1);
+        }
+       
         /* -------Ashwini-------- */
 
 
 
 
     
-      .container {
-          text-align: center;
-      }
-      h1 {
-          color: #007bff;
-          margin-bottom: 10px;
-      }
-      p {
-          color: #666;
-          margin-bottom: 30px;
-      }
-      .nav-tabs {
-          border-bottom: 2px solid #dfe1e5;
-      }
-      .nav-link {
-          color: #666;
-          margin: 0 10px;
-      }
-      .nav-link.active {
-          color: #007bff;
-          border-color: #007bff;
-          border-bottom: 2px solid #007bff;
-      }
-      .tab-content img {
-          width: 100%;
-          max-width: 800px;
-          margin-top: 30px;
-      }
-      .container-deepa {
-        text-align: center;
-        padding: 20px;
-      }
-  
-      .main-heading-deepa {
-        font-size: 3em;
-        margin-bottom: 20px;
-        animation: fadeIn 2s ease-in-out;
-      }
-  
-      .main-cards-deepa {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-  
-      .card-deepa {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        width: 300px;
-        transition: transform 0.3s, box-shadow 0.3s;
-        animation: popUp 0.6s ease-in-out;
-      }
-  
-      .card-deepa img {
-        width: 100%;
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .nav-tabs {
+            border-bottom: 2px solid #dfe1e5;
+        }
+        .nav-link {
+            color: #666;
+            margin: 0 10px;
+        }
+        .nav-link.active {
+            color: #007bff;
+            border-color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+        .tab-content img {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+
+
+
+        .Aniket_upper_cont_footer{
+            width: 1120px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0px;
+            margin: auto;
+        }
+        .Aniket_upper_cont_footer>a>img{
+            width: 350px;
+            height:250px;
+            animation: Aniket_f9 ;
+            animation-timeline: view();
+        }
+        @keyframes Aniket_f9 {
+            0%{
+                transform: scale(0.1);
+                opacity: -2;
+            }
+            30%{
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50%{
+                transform: scale(1);
+                opacity: 2;
+            }
+            75%{
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            100%{
+                transform: scale(0.3);
+                opacity: -1;
+            }
+    
+            
+        }
+      .Aniket_foot_cont{
+        max-width: 1320px;
         height: auto;
-      }
-  
-      .card-deepa h3 {
-        margin: 10px 0;
-      }
-  
-      .read-more-deepa {
-        color: rgb(43, 120, 192);
-        cursor: pointer;
-        margin-bottom: 10px;
-      }
-  
-      .card-deepa:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      }
-  
-      .read-more-deepa:hover {
-        text-decoration: underline;
-      }
-  
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-  
-      @keyframes popUp {
-        from {
-          transform: scale(0.9);
-          opacity: 0;
-        }
-        to {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-  
-      @media (max-width: 768px) {
-        .main-heading-deepa {
-          font-size: 2em;
-        }
-        .main-cards-deepa {
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-  
-      footer {
-        background-color: rgb(8, 1, 2);
-        padding: 50px 0 30px;
-        border-top-left-radius: 125px;
-        font-size: 13px;
-        line-height: 20px;
-        color: white;
-      }
-  
-      .footer-container-deepa {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-  
-      .footer-heading-deepa {
-        font-size: 24px;
-        margin-bottom: 20px;
-      }
-  
-      .footer-form-deepa {
-        display: flex;
+        margin: auto;
+        display: grid;
         gap: 20px;
-        justify-content: center;
-      }
-  
-      .footer-form-deepa input[type="text"],
-      .footer-form-deepa input[type="email"],
-      .footer-form-deepa select {
-        padding: 10px;
-        font-size: 16px;
-        border: 2px solid rgb(24, 196, 226);
-        border-radius: 5px;
-      }
-  
-      .footer-form-deepa button {
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 Aq5";
+        padding: 0px 70px;
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        width: 350px;
+        grid-area: Aq1;
+    }
+    .Aniket_foot_cont>div:nth-child(2){
+       
+        grid-area: Aq2;
+    }
+    .Aniket_foot_cont>div:nth-child(3){
+       
+       grid-area: Aq3;
+   }
+   .Aniket_foot_cont>div:nth-child(4){
+       
+       grid-area: Aq4;
+   }
+   .Aniket_foot_cont>div:nth-child(5){
+       
+       grid-area: Aq5;
+   }
+    .Aniket_foot_cont a{
+        text-decoration: none;
         color: white;
-        cursor: pointer;
-      }
-  
-      .row-deepa {
-        width: 95%;
+    }
+    .Aniket_foot_cont ul{
+        list-style-type: none;
+    }
+    .Aniket_foot_cont li{
+        margin-top: 30px;
+    }
+    .Aniket_foot_cont>div:nth-child(2)>ul>p{
+        font-size: 23px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(3)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(4)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(5)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>h1{
+        color: rgb(41, 146, 251);
+        font-weight: 900;
+        font-size: 45px;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(2){
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(3){
+        color: rgb(0, 102, 255);
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>hr{
+        max-width: 250px;
+        color: white;
+        border: 1px solid white;
+        opacity: 1;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(5){
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        width: 200px;
+        margin-top: 20px;
+        
+    }
+
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(6){
+        color: rgb(0, 102, 255);
+        font-size: 15px;
+        font-weight: 500;
+        width: 200px;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap ;
+    }
+    .Aniket_foot_form{
+        max-width: 900px;
+        height: auto;
+        padding: 10px 35px;
+        border-radius:10px ;
+        margin: auto;
+        display: flex;
+        gap:10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background-color: rgb(46, 46, 46);
+        justify-content: center;
+    }
+    .Aniket_foot_form>input{
+        width: 220px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 220px;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }
+    .aniket_lower_footer{
+        max-width: 1320px;
+        height: auto;
         margin: auto;
         display: flex;
         justify-content: space-between;
         margin-top: 20px;
-        flex-wrap: wrap;
-      }
-  
-      .col-deepa {
-        width: 20%;
-        padding: 10px;
-      }
-  
-      .col-deepa h3 {
-        margin-bottom: 20px;
-        color: rgb(16, 92, 190);
-      }
-  
-      .col-deepa h4 {
-        margin-bottom: 20px;
+    }
+    .aniket_lower_footer p{
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        display: inline-block;
+        margin-right:20px ;
+        margin-left:50px ;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+        font-size: 13px;
+        color: rgb(0, 102, 255);
+        
+    }
+    .aniket_lower_footer>div:nth-child(2)>a{
+        font-size: 20px;
         color: white;
-      }
-  
-      .image-deepa {
-        display: flex;
+        background-color: rgb(41, 146, 251);
+        padding: 10px 15px;
+        border-radius: 50%; 
+        margin-right: 5px;       
+    }
+    .aniket_lower_footer>div:nth-child(2)>a:last-child{
+        
+        margin-right: 55px;       
+    }
+
+    @media (width<=920px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
         gap: 10px;
-        margin-bottom: 20px;
+        
+        padding: 0px 30px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 250px;
+    }        
+    }
+    @media (width<=740px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 "
+                                "Aq5 . . .";
+        padding: 0px 20px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }        
+    }
+    @media (width<=550px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3  "
+                                "Aq1 Aq4 Aq5";
+        padding: 0px 10px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 150px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-      }
-  
-      .image-deepa img {
-        width: 80px;
-      }
-  
-      .copyright-deepa {
+        gap: 5px;
+    }  
+    }
+    @media (width<=350px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "Aq1 Aq1"
+                            "Aq2 Aq3  "
+                            " Aq4 Aq5";
+        padding: 0px 0px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
         display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        border-top: 1px solid #ccc;
-      }
-  
-      .copyright-deepa > div p a {
-        color: #fff;
-        text-decoration: none;
-      }
-  
-      .left-deepa {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-  
-      .left-deepa p {
-        margin: 0;
-      }
-  
-      .right-deepa {
-        display: flex;
-        gap: 10px;
-        font-size: 30px;
-      }
-  
-      .right-deepa a {
-        color: #ccc;
-        text-decoration: none;
-      }
-  
-      @media (max-width: 768px) {
-        .footer-form-deepa {
-          flex-direction: column;
-          width: 80%;
-          margin: auto;
-          justify-content: center;
-        }
-  
-        .row-deepa {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-        }
-  
-        .col-deepa {
-          width: 100%;
-          padding: 20px;
-        }
-  
-        .col-deepa h2 {
-          font-weight: bolder;
-          margin-bottom: 50px;
-        }
-      }
+        margin: 0px;
+        gap: 2px;
+    }  
+    }
 
-
-      @keyframes a1{
-        0%{
-            opacity: -1;
-            scale: 0.5;
-        }
-        50%{
-            opacity:2;
-            scale:1.2;
-        }
-        100%{
-            opacity:0;
-            scale:0.8;
-        }
-    }
-    @media(max-width:768px){
-        @keyframes a1{
-        from{
-            opacity: 50;
-            scale: 0.5;
-        }
-        to{
-            opacity:100;
-            scale:1;
-        }
-    }
-    }
     div#Ash_cards{
         animation: a1 linear;
         animation-timeline: view();
