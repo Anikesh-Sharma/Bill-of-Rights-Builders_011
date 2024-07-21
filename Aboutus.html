@@ -4,13 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb24d2ec33.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        .main_nav {
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        
+        .Aniket_nav {
+            padding: 0 10px;
+        }
+        
+        .aniket_nav_button {
+            background-color: rgb(237, 244, 254);
+            color: rgb(0, 102, 255);
+            border: 1.5px solid rgb(0, 102, 255);
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 7px 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .aniket_nav_button:hover {
+            background-color: rgb(0, 102, 255);
+            color: white;
+        }
+        
+        .aniket_nav_fonts {
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            color: rgb(76, 75, 75);
+        }
+        
+        .aniket_nav_fonts:hover {
+            color: rgb(0, 102, 255);
+        }
+        
+        .Aniket_nav_ele {
+            display: flex;
+            align-items: center;
+        }
+        
+        .Aniket_nav_ele > span {
+            font-size: 19px;
+            font-weight: 600;
+            margin-right: 30px;
+            color: rgb(75, 74, 74);
+            padding: 10px;
+        }
+        
+        .Aniket_nav_ele > span:hover {
+            background-color: #e7eaf1;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .aniket_logo {
+            font-size: 40px;
+            font-weight: 900;
+            color: rgb(29, 135, 244);
+        }
+
+
+
+
+
+
+
+        /* ------Ashwini------- */
         *{
             margin: 0;
             padding: 0;
@@ -53,6 +130,25 @@
             color: white;
 
         }
+        @media (max-width:900px){
+            div.Ash_second_nav>div.Ash_sec_div>h4{
+                color: white;
+                font-size: 18px;
+                font-family: Inter, sans-serif; 
+            }
+            div.Ash_second_nav>div.Ash_sec_div>button{
+                background-color: rgb(255, 255, 255);
+                color:rgb(3, 70, 136);
+                padding:8px 8px;
+                margin: 10px;
+                border-radius: 8px;
+                border: none;
+                font-size: 10px;
+        }
+
+
+
+        }
         div.Ash_img_sec{
             width: 100%;
             height: 800px;
@@ -75,6 +171,7 @@
             margin: auto;
             margin-top: 20px;
         }
+
         div.Ash_img_sec>button{
             background: linear-gradient(rgb(47, 150, 253), rgb(4, 36, 69));
             position: relative;
@@ -88,6 +185,47 @@
         div.Ash_img_sec>button:hover{
             background: linear-gradient(rgb(221, 226, 232), rgb(142, 177, 213));
             color:blue;
+        }
+        @media (max-width:768px){
+            div.Ash_img_sec>p{
+                color: antiquewhite;
+                text-align: center;
+                font-size: 15px;
+                max-width: 600px;
+                margin: auto;
+                margin-top: 20px;
+        }
+        div.Ash_img_sec>h1{
+            color: rgba(217, 222, 226, 0.905);
+            font-size: 30px;
+            text-align: center;
+            padding-top: 500px;
+        }
+        div.Ash_img_sec>button{
+            background: linear-gradient(rgb(47, 150, 253), rgb(4, 36, 69));
+            position: relative;
+            left:40%;
+            padding:20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        }
+        @media (max-width:400px){
+            div.Ash_img_sec>button{
+            background: linear-gradient(rgb(47, 150, 253), rgb(4, 36, 69));
+            position: relative;
+            left:40%;
+            padding:20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+
+
         }
         div.Ash_logos{
             width: 100%;
@@ -155,7 +293,7 @@
         @media (max-width:450px){
             div#Ash_cards{
                 display: grid;
-                
+                width:400px;
                 grid-template-areas:"a1 "
                                     "a2 "
                                     "a3 "
@@ -184,19 +322,7 @@
             grid-area:a4;
         } 
         
-        div#Ash_cards>div:nth-of-type(1):hover{
-            box-shadow: rgba(77, 161, 234, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-             
-        }
-        div#Ash_cards>div:nth-of-type(2):hover{
-            box-shadow: rgba(77, 161, 234, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-             
-        }
-        div#Ash_cards>div:nth-of-type(3):hover{
-            box-shadow: rgba(77, 161, 234, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-             
-        }
-        div#Ash_cards>div:nth-of-type(4):hover{
+        div#Ash_cards>div:hover{
             box-shadow: rgba(77, 161, 234, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
              
         }
@@ -243,12 +369,14 @@
         }
         div.Ash_small_cards{
             width:1000px;
-            height: 300px;
+            height: auto;
             margin-left: 130px;
+            display: grid;
+            grid-template-areas: "a1 a2 a3 a4";
         }
         div.Ash_small_cards>div#Ash_small_div{
             width: 250px;
-            height: 100%;
+            height: auto;
             /* border-right: 1px solid rgb(210, 208, 208); */
         }
         div.Ash_small_cards>div#Ash_small_div>div{
@@ -270,13 +398,595 @@
             font-size: 15px;
             padding: 0 10px;
         }
-        div.Ash_small_cards{
-            display: grid;
-            grid-template-areas: "a1 a2 a3 a4";
+        @media (max-width:768px){
+            div.Ash_small_cards{
+                display: grid;
+                /* padding-left: 50px; */
+                width:600px;
+                grid-template-areas:"a1 a2 "
+                                    "a3 a4";
+        
+            }
         }
+        @media (max-width:600px){
+            div.Ash_small_cards{
+                display: grid;
+                width:300px;
+                margin-left: 0;
+                grid-template-areas:"a1 "
+                                    "a2 "
+                                    "a3 "
+                                    "a4";
+        
+            }
+        }
+        @media (min-width:768px) and (max-width:992px){
+            div.Ash_small_cards{
+                display: grid;
+                width: 700px;
+                grid-template-areas:"a1 a2 a3"
+                                    " a5 a4 a6";
+        
+            }
+        }
+        div.Ash_small_cards>div:nth-of-type(1){
+            grid-area:a1 ;
+        }
+        div.Ash_small_cards>div:nth-of-type(2){
+            grid-area:a2;
+        }
+         div.Ash_small_cards>div:nth-of-type(3){
+            grid-area:a3;
+        }
+        div.Ash_small_cards>div:nth-of-type(4){
+            grid-area:a4;
+        } 
+
+        div#headings{
+            width: 100%;
+            height: auto;
+            align-content:center ;
+        }
+        div#headings>h1{
+            margin-top: 100px;
+            text-align: center;
+            color:rgb(46, 138, 255);
+        }
+        div#headings>p{
+            text-align: center;    
+            font-size: 20px;
+        }
+        div#our_team{
+                width:100%;
+                height:auto;
+                margin-bottom: 100px;
+                display:grid;
+                grid-template-areas:"a1 a2 a3 a4";
+                gap:10px;
+            }
+        div#members{
+            width:300px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }    
+        div#members>div{
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+            border:2px solid rgb(46, 138, 255);
+            
+            
+            margin: 50px 50px 0 50px;
+        }
+       
+        div#members:hover{
+            box-shadow: rgba(77, 161, 234, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+        }        
+        
+        div#members>h4{
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        div#members>h5{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            color:rgb(46, 138, 255);
+        }
+        div#members>h6{
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        @media (max-width:768px){
+            div#our_team{
+                display: grid;
+                /* padding-left: 50px; */
+                max-width:600px;
+                grid-template-areas:"a1 a2 "
+                                    "a3 a4";
+        
+            }
+            
+        }
+        @media (max-width:450px){
+            div#our_team{
+                display: grid;
+                max-width:400px;
+                grid-template-areas:"a1 "
+                                    "a2 "
+                                    "a3 "
+                                    "a4";
+        
+            }
+        }
+        @media (min-width:768px) and (max-width:992px){
+            div#our_team{
+                display: grid;
+                width: 700px;
+                grid-template-areas:"a1 a2 a3"
+                                    " a5 a4 a6";
+        
+            }
+        }
+        div#our_team>div:nth-of-type(1){
+            grid-area:a1 ;
+        }
+        div#our_team>div:nth-of-type(2){
+            grid-area:a2;
+        }
+         div#our_team>div:nth-of-type(3){
+            grid-area:a3;
+        }
+        div#our_team>div:nth-of-type(4){
+            grid-area:a4;
+        }
+        
+        /* -------Footer-------- */
+
+        .Aniket_foot_cont{
+        max-width: 1320px;
+        height: auto;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 Aq5";
+        padding: 0px 70px;
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        width: 350px;
+        grid-area: Aq1;
+    }
+    .Aniket_foot_cont>div:nth-child(2){
+       
+        grid-area: Aq2;
+    }
+    .Aniket_foot_cont>div:nth-child(3){
+       
+       grid-area: Aq3;
+   }
+   .Aniket_foot_cont>div:nth-child(4){
+       
+       grid-area: Aq4;
+   }
+   .Aniket_foot_cont>div:nth-child(5){
+       
+       grid-area: Aq5;
+   }
+    .Aniket_foot_cont a{
+        text-decoration: none;
+        color: white;
+    }
+    .Aniket_foot_cont ul{
+        list-style-type: none;
+    }
+    .Aniket_foot_cont li{
+        margin-top: 30px;
+    }
+    .Aniket_foot_cont>div:nth-child(2)>ul>p{
+        font-size: 23px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(3)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(4)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(5)>ul>p{
+        font-size: 22px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 35px;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>h1{
+        color: rgb(41, 146, 251);
+        font-weight: 900;
+        font-size: 45px;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(2){
+        color: white;
+        font-size: 13px;
+        font-weight: 600;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(3){
+        color: rgb(0, 102, 255);
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 20px;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>hr{
+        max-width: 250px;
+        color: white;
+        border: 1px solid white;
+        opacity: 1;
+    }
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(5){
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+        width: 200px;
+        margin-top: 20px;
+        
+    }
+
+    .Aniket_foot_cont>div:nth-child(1)>p:nth-child(6){
+        color: rgb(0, 102, 255);
+        font-size: 15px;
+        font-weight: 500;
+        width: 200px;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1)>div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap ;
+    }
+    .Aniket_foot_form{
+        max-width: 900px;
+        height: auto;
+        padding: 10px 35px;
+        border-radius:10px ;
+        margin: auto;
+        display: flex;
+        gap:10px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        background-color: rgb(46, 46, 46);
+        justify-content: center;
+    }
+    .Aniket_foot_form>input{
+        width: 220px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 220px;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }
+    .aniket_lower_footer{
+        max-width: 1320px;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .aniket_lower_footer p{
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        display: inline-block;
+        margin-right:20px ;
+        margin-left:50px ;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+        font-size: 13px;
+        color: rgb(0, 102, 255);
+        
+    }
+    .aniket_lower_footer>div:nth-child(2)>a{
+        font-size: 20px;
+        color: white;
+        background-color: rgb(41, 146, 251);
+        padding: 10px 15px;
+        border-radius: 50%; 
+        margin-right: 5px;       
+    }
+    .aniket_lower_footer>div:nth-child(2)>a:last-child{
+        
+        margin-right: 55px;       
+    }
+
+    @media (width<=920px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        
+        padding: 0px 30px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 250px;
+    }        
+    }
+    @media (width<=740px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3 Aq4 "
+                                "Aq5 . . .";
+        padding: 0px 20px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }        
+    }
+    @media (width<=550px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "Aq1 Aq2 Aq3  "
+                                "Aq1 Aq4 Aq5";
+        padding: 0px 10px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 150px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }  
+    }
+    @media (width<=350px) {
+        .Aniket_foot_cont{
+        max-width: 900px;
+        gap: 5px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "Aq1 Aq1"
+                            "Aq2 Aq3  "
+                            " Aq4 Aq5";
+        padding: 0px 0px;
+    }
+    .aniket_lower_footer>div:nth-child(1)>span{
+       display: none;
+        
+    }
+    .Aniket_foot_cont>div:nth-child(1){
+        max-width: 200px;
+    }
+    .Aniket_foot_form{
+        max-width: 90%;
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .Aniket_foot_form>input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding-left: 10px;
+        background-color:rgb(72, 70, 70);
+       
+    }
+    .Aniket_foot_form>select{
+        width: 100%;
+        height: 40px;
+        color: gray;
+        background-color:rgb(72, 70, 70);
+        border: none;    }
+    .Aniket_foot_form>button{
+        width: 180px;
+    }      
+    .aniket_lower_footer>div:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px;
+        gap: 2px;
+    }  
+    }
     </style>
 </head>
 <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary Aniket_nav main_nav">
+        <div class="container-fluid">
+            <a class="navbar-brand aniket_logo" href="#">Flex.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Platform
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Platform</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link aniket_nav_fonts">Partners</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle aniket_nav_fonts" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="Aniket_nav_ele">
+                    <span>Log In</span>
+                    <button class="Aniket_nav_button" id="talkToUsBtn">Talk To Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <div id="overlay" class="overlay"></div>
+        <div class="container" id="formContainer">
+            <button class="close-btn" id="closeFormBtn">&times;</button>
+            <div class="left-section-anikesh">
+                <h1>Grid.</h1>
+                <p>Connected Frontline Operations</p>
+            </div>
+            <div class="form-section">
+                <h2>Contact Us</h2>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Last Name *">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email Address *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Phone Number *">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Company Name *">
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option>Industry *</option>
+                        <option>Industry 1</option>
+                        <option>Industry 2</option>
+                        <option>Industry 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What problem are you trying to solve with Grid?">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="What's your monthly budget to solve this problem?">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="privacyCheck">
+                    <label class="form-check-label" for="privacyCheck">I agree to Grid's Privacy Policy Terms and Conditions, and provide consent to send communication to the details provided by me.</label>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>     
+                 
 
     <div class="Ash_second_nav">
     <div class="Ash_sec_div"><h4>OUT NOW: The Ultimate Guide to EHS Compliance E-BOOK</h4>
@@ -384,10 +1094,188 @@
                     <p >Built on simple databasing and API concepts, our platform works out of the box with any existing systems.</p>
                 </div>
 
-               
-
-         </div>   
-        
+            </div>     
+        </div>
     </section>
+
+    <section>
+        <div class="Ash_container ">
+            <div id="headings">
+                <h1>Meet our team</h1>
+                <p>Our philosophy is simple — hire a team of diverse, passionate people and foster </p>
+                <p>a culture that empowers you to do your best work.</p>
+            </div>
+
+            <div id="our_team">
+                <div id="members">
+                    <div style=" background-image: url(./Anikesh.jpg);
+                    background-size: cover;">    
+                    </div>
+                    <h4>Anikesh Sharma</h4>
+                    <h5>Team Lead</h5>
+                    <h6>Aspiring Web Developer</h6>
+                
+                </div>
+
+                <div id="members">
+                    <div style=" background-image: url(./Aniket.jpg);
+                    background-size: cover;">    
+                    </div>
+                    <h4>Aniket Savita</h4>
+                    <h5>Team Member 1</h5>
+                    <h6>Aspiring Web Developer</h6>
+                
+                </div>
+
+                <div id="members">
+                    <div style=" background-image: url(./Deepa.jpg);
+                    background-size: cover;">   
+                    </div>
+                    <h4>Deepa Dhakad</h4>
+                    <h5>Team Member 2</h5>
+                    <h6>Aspiring Web Developer</h6>
+                
+                </div>
+
+                <div id="members">
+                    <div style=" background-image: url(./Ashwini.jpg);
+                    background-size: cover;">   
+                    </div>
+                    <h4>Ashwini Patil</h4>
+                    <h5>Team Member 3</h5>
+                    <h6>Aspiring Web Developer</h6>
+                
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+  <footer style="width: 100vw; height: auto;  padding: 20px 40px; background-color: rgb(3, 9, 23);">
+    <h1 style="margin: auto; max-width: 600px; color: #fff;
+    text-align: center;">Subscribe to the Newsletter</h1>   
+    <div class="Aniket_foot_form">
+      
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="Email address">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Industry</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <button type="button" class="btn btn-primary">Subscribe</button>
+    </div>
+    <div class="Aniket_foot_cont">
+        <div>
+            <h1>Flex.</h1>
+            <p>Changing how businesses build and use applications.</p>
+            <p>Get a free trial for your company</p>
+            <hr>
+            <p>Shree Gopal Complex, Workongrid, 3P, Court Rd, Ranchi, Jharkhand 834001, India</p>
+            <p>+91 - 62032 49377
+                hello@workongrid.com</p>
+            <div>
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89fff66b3e5cf7bc4d3_AWS%20Partner.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89eca71bb3a5478daba_AWS%20QS.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a022f62f5631836e50_GDPR.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c89f5d824989670c4495_SOC-2.png" alt="">
+                <img src="https://cdn.prod.website-files.com/643d224cab5dcf49a45cf330/65c9c8a0b587a200a933e1bb_ISO-27001.png" alt="">
+            </div>
+        </div>
+        <div>
+            <ul>
+                <p> Platform</p>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Deployment Models</a></li>
+                <li><a href="">Business Intelligence</a></li>
+                <li><a href="">ioT Data</a>
+                </li>
+                <li><a href="">Integrations</a></li>
+                <li><a href="">GIS Data</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <p> Industry</p>
+                <li><a href="">Mining</a></li>
+                <li><a href="">Utilities</a></li>
+                <li> <a href="">Infrastructure</a></li>
+                <li><a href="">Manufacturing</a></li>
+                <li>  <a href="">Food and Beverages</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <p>  Resources</p>
+                <li><a href="">Grid Academy</a></li>
+                <li><a href=""> Help Articles</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <p>  Company</p>
+                <li><a href="">About Us</a></li>
+                <li><a href=""> Careers</a></li>
+                <li><a href="">Partners</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr style="height: 3px; background-color: #fff; opacity: 2; margin: auto; width: 91%;">
+    <div class="aniket_lower_footer">
+        <div><p>© Copyright 2023 Grid. All Rights Reserved.
+        </p>
+        <span>End User License Agreement | </span>
+           <span>Terms of service | </span> 
+            <span>Privacy Policy | </span>
+           <span>Cookie Policy</span>
+        </div> 
+        <div>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('talkToUsBtn').addEventListener('click', function() {
+        document.getElementById('formContainer').style.display = 'flex';
+        document.getElementById('overlay').style.display = 'block';
+        setTimeout(() => {
+            document.getElementById('formContainer').style.opacity = '1';
+            document.getElementById('formContainer').style.transform = 'scale(1)';
+        }, 10); // Delay to ensure the transition effect is applied
+        this.style.display = 'none'; // Hide the "Talk To Us" button
+    });
+    document.getElementById('closeFormBtn').addEventListener('click', function() {
+        closeForm();
+    });
+    document.getElementById('overlay').addEventListener('click', function() {
+        closeForm();
+    });
+    function closeForm() {
+        document.getElementById('formContainer').style.opacity = '0';
+        document.getElementById('formContainer').style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('talkToUsBtn').style.display = 'block'; // Show the "Talk To Us" button
+        }, 500); // Delay to match the transition duration
+    }
+</script>
+
+
+
+
+
+
+
+
 </body>
 </html>
