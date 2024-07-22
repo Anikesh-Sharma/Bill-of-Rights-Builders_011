@@ -876,12 +876,22 @@
 
         .Aniket_upper_cont_footer{
             width: 1120px;
-            height: auto;
+            height: 400px;
             display: flex;
             justify-content: space-between;
             padding: 50px 0px;
             margin: auto;
             margin-top: 100px;
+        }
+        @media (width<=900px){
+
+            .Aniket_upper_cont_footer{
+                height: 200px;
+
+            }
+            .Aniket_upper_cont_footer>a>img{
+             display: none;
+            }
         }
         .Aniket_upper_cont_footer>a>img{
             width: 350px;
