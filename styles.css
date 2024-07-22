@@ -713,7 +713,166 @@
        
         /* -------Ashwini-------- */
 
-      
+
+
+
+
+
+        .wrapper-custom {
+            background-color: #f7f8fc;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            text-align: center;
+            padding: 20px 10px;
+        }
+  
+        .container-custom {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+  
+        .custom-h1 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+  
+        .custom-p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+  
+        .nav-tabs-custom {
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #dfe1e5;
+            padding-bottom: 10px;
+        }
+  
+        .nav-link-custom {
+            color: #666;
+            margin: 5px 10px;
+            cursor: pointer;
+            padding: 10px;
+            text-decoration: none;
+        }
+  
+        .nav-link-custom.active {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+  
+        .tab-content-custom img {
+            width: 100%;
+            max-width: 800px;
+            margin-top: 20px;
+            height: calc(100% - 100px); /* Adjusting height to fit within the 500px container */
+            object-fit: contain;
+        }
+  
+        .get-started-btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+  
+        .tab-pane-custom {
+            display: none;
+        }
+  
+        .tab-pane-custom.active {
+            display: block;
+        }
+  
+        @media (max-width: 768px) {
+            .container-custom {
+                width: 100%;
+                padding: 10px;
+            }
+  
+            .custom-h1 {
+                font-size: 24px;
+            }
+  
+            .custom-p {
+                font-size: 16px;
+            }
+  
+            .nav-tabs-custom {
+                flex-direction: column;
+                align-items: center;
+            }
+  
+            .nav-link-custom {
+                margin: 5px 0;
+                width: 100%;
+                font-size: 16px;
+            }
+  
+            .get-started-btn-custom {
+                font-size: 16px;
+            }
+        }
+  
+        @media (min-width: 769px) and (max-width: 992px) {
+            .wrapper-custom {
+                align-items: flex-start;
+            }
+  
+            .container-custom {
+                margin-top: 40px;
+                width: 80%;
+            }
+  
+            .custom-h1 {
+                font-size: 28px;
+            }
+  
+            .custom-p {
+                font-size: 17px;
+            }
+  
+            .get-started-btn-custom {
+                font-size: 17px;
+            }
+        }
+  
+        @media (min-width: 993px) {
+            .container-custom {
+                width: auto;
+                padding: 0;
+            }
+  
+            .nav-tabs-custom {
+                flex-direction: row;
+                justify-content: center;
+            }
+  
+            .nav-link-custom {
+                margin: 0 10px;
+                width: auto;
+            }
+  
+            .custom-h1 {
+                font-size: 32px;
+            }
+  
+            .custom-p {
+                font-size: 18px;
+            }
+  
+            .get-started-btn-custom {
+                font-size: 18px;
+            }
+        }
+            
+        
 
         .Aniket_upper_cont_footer{
             width: 1120px;
@@ -722,6 +881,7 @@
             justify-content: space-between;
             padding: 50px 0px;
             margin: auto;
+            margin-top: 100px;
         }
         .Aniket_upper_cont_footer>a>img{
             width: 350px;
