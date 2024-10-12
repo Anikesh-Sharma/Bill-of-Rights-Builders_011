@@ -6,7 +6,7 @@
 
 #Project Type: Frontend
 
-*Deployed App Frontend: https://deployed-site..........
+*Deployed App Frontend: https://mda3.netlify.app/
 
 #Directory Structure: ├─ frontend/ │ ├─ index.html │ ├─ styles.css
 ![Screenshot (320)](https://github.com/user-attachments/assets/8dd1186e-44a6-41e6-8596-9bdd9ade0f4f)
